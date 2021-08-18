@@ -49,7 +49,8 @@ public class UnionFind {
 }
 ```
 ## Use union find to find connected components in undirected graph
-![union find animation](./assets/union_find_animation.gif)
+![Alt Text](https://raw.githubusercontent.com/ryancheunggit/leetcode/rise/note/assets/union_find_animation.gif)
+
 ```python
 connections = [[0, 1], [1, 2], [2, 3], [3, 4], [5, 6], [6, 8], [7, 9]]
 
