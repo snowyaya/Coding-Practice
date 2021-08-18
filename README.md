@@ -50,7 +50,7 @@ public class UnionFind {
 ```
 ## Use union find to find connected components in undirected graph
 ![image](https://user-images.githubusercontent.com/75382121/129955828-5e0e32e4-2795-4099-a0e1-259f80ffa4e1.png)
-```
+```python
 connections = [[0, 1], [1, 2], [2, 3], [3, 4], [5, 6], [6, 8], [7, 9]]
 
 uf = UnionFind(10)
