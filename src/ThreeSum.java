@@ -1,6 +1,6 @@
 public class ThreeSum {
     public int getThreeSum() {
-        int sum = 3;
+        int sum = 4;
         return sum;
     }
 }
