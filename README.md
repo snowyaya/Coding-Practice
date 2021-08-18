@@ -48,6 +48,16 @@ public class UnionFind {
     }  
 }
 ```
+## Use union find to find connected components in undirected graph
+![image](https://user-images.githubusercontent.com/75382121/129955828-5e0e32e4-2795-4099-a0e1-259f80ffa4e1.png)
+```
+connections = [[0, 1], [1, 2], [2, 3], [3, 4], [5, 6], [6, 8], [7, 9]]
+
+uf = UnionFind(10)
+for p, q in connections: uf.union(p, q)
+num_components = len(set(uf.find(i) for i in range(10)))
+print(num_components)
+```
 
 ## Example Problems
 * 200 Number of Islands (DFS is better)
