@@ -12,6 +12,16 @@ I will put the link of my explanation, other's explanation, or other's explanati
 * The algorithm can be used to find all connected components in a network.
 * It is also used in kruskal's algorithm to find the minimal spanning tree for a graph.
 
+## Algorithms
+* William Fiset
+   * [Union Find Intro](https://www.youtube.com/watch?v=ibjEGG7ylHk&t=0s)
+   * [Union find kruskal's algorithm](https://www.youtube.com/watch?v=JZBQLXgSGfs&t=0s)
+   * [Union and Find](https://www.youtube.com/watch?v=0jNmHPfA_yE&t=0s)
+   * [Path Compression](https://www.youtube.com/watch?v=VHRhJWacxis&t=0s)
+   * [Source Code](https://www.youtube.com/watch?v=KbFlZYCpONw&t=0s)
+* Tushar Roy
+   * [Disjoint Sets using union by rank and path compression Graph Algorithm](https://www.youtube.com/watch?v=ID00PMy0-vE&t=1s)
+
 ## Implementation (Java)
 ```java
 public class UnionFind {
