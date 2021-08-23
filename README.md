@@ -295,3 +295,100 @@ public class Solution {
     }
 }
 ```
+# Binary Tree
+## Example Problems
+* 236 Lowest Common Ancestor of a Binary Tree 
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+ 
+// Iterative 
+
+class Solution {
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if (p.equals(q)) return p;
+        
+        Stack<TreeNode> pathToP = this.pathTo(root, p);
+        Stack<TreeNode> pathToQ = this.pathTo(root, q);
+        
+        if (pathToP == null || pathToQ == null) return null;
+        
+        TreeNode prev = null;
+        while (!pathToP.isEmpty() && ! pathToQ.isEmpty()) {
+            TreeNode s = pathToP.pop();
+            TreeNode t = pathToQ.pop();
+            if (s.equals(t)) {
+                prev = s;
+            } else {
+                break;
+            }
+        }
+        return prev;
+    }
+    
+    public Stack<TreeNode> pathTo(TreeNode tree, TreeNode n) {
+        // Two base cases
+        if (tree == null) return null;
+        if (tree.equals(n)) {
+            Stack<TreeNode> s = new Stack<TreeNode>();
+            s.push(tree);
+            return s;
+        }
+        
+        // Assume each node is unique in the tree
+        Stack<TreeNode> left = pathTo(tree.left, n);
+        Stack<TreeNode> right = pathTo(tree.right, n);
+        if (left != null) {
+            left.push(tree);
+            return left;
+        }
+        if (right != null) {
+            right.push(tree);
+            return right;
+        }
+        return null;
+    }
+}
+```
+
+```java
+// Recursive
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if (root == null){
+            return null;
+        }
+        
+        if (root == p || root == q) {
+            return root;
+        } 
+        
+        TreeNode left = lowestCommonAncestor(root.left, p, q);
+        TreeNode right = lowestCommonAncestor(root.right, p, q);
+        
+        if (left != null && right != null) {
+            return root;
+        } else if (left == null && right == null) {
+            return null;
+        }
+        
+        return left != null ? left : right;
+    }
+}
+```
