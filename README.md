@@ -1,5 +1,10 @@
 # LeetCode-Practice-Explanation
-I will put the link of my explanation, other's explanation, or other's explanation (video) reference here for the learning purp
+This table is the record of the LeetCode problems I have solved and the link to my video explanation is also attached.
+| Problem | Video |
+| --- | --- |
+| 323 | [Number of Connected Components in Undirected Graph](https://drive.google.com/file/d/1dKj-ISvLeD69cJVjl5_ZdPD2QITQbrsd/view?usp=sharing) |
+| 200 | [Number of Islands](https://drive.google.com/file/d/1PBQnNPi5V-EglKhyLyTUKlEKboPDhh1Q/view?usp=sharing) |
+| 232 | [Implement Queue with Stacks](https://drive.google.com/file/d/1XSxYgV1y920T3BhwJ2wRg2IVyl9mATUu/view?usp=sharing) |
 
 # Union Find | Disjoint Sets
 ## what is union find?
