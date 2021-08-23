@@ -72,7 +72,6 @@ print(num_components)
 
 ## Example Problems
 * 200 Number of Islands (DFS is better)
-  * [my explanation]
 ```java
 class Solution {
     public int numIslands(char[][] grid) {
@@ -125,7 +124,6 @@ class Solution {
 }
 ```
 * 305 Number of Islands 2 
-  * [my explanation]
  ```java
     class Solution {
     private int count = 0; // will hold count of islands
@@ -220,7 +218,6 @@ class Solution {
 }
 ```
 * 323 Number of Connected Components in Undirected Graph
-  * [my explanation]
 ```java
 class Solution {
     public int countComponents(int n, int[][] edges) {
