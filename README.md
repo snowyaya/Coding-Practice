@@ -7,8 +7,9 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | 232 | [Implement Queue with Stacks](https://drive.google.com/file/d/1XSxYgV1y920T3BhwJ2wRg2IVyl9mATUu/view?usp=sharing) |
 | 236 | [Lowest Common Ancestor of a Binary Tree: part1](https://drive.google.com/file/d/1UpiVikwsjdzRJhoi3R5qLqmQjDUgcO2E/view?usp=sharing) [part2](https://drive.google.com/file/d/1rM6KERa6JoJCmSFzDg3hHFcME7dqGs0O/view?usp=sharing)|
 
-# Union Find | Disjoint Sets
-## what is union find?
+# Data Structure and Algorithms
+## Union Find | Disjoint Sets
+### what is union find?
 [Reference](https://github.com/ryancheunggit/leetcode/blob/rise/note/union_find.md)
 * Union Find is a data structure keeps track of a set of elements that are partitioned into a number of disjoint subsets.
 * It has two operations `union(p, q)` and `find(p)`.
@@ -18,7 +19,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 * The algorithm can be used to find all connected components in a network.
 * It is also used in kruskal's algorithm to find the minimal spanning tree for a graph.
 
-## Algorithms
+### Algorithms
 * William Fiset
    * [Union Find Intro](https://www.youtube.com/watch?v=ibjEGG7ylHk&t=0s)
    * [Union find kruskal's algorithm](https://www.youtube.com/watch?v=JZBQLXgSGfs&t=0s)
@@ -28,7 +29,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 * Tushar Roy
    * [Disjoint Sets using union by rank and path compression Graph Algorithm](https://www.youtube.com/watch?v=ID00PMy0-vE&t=1s)
 
-## Implementation (Java)
+### Implementation (Java)
 ```java
 public class UnionFind {
     private int[] parent;
@@ -64,7 +65,7 @@ public class UnionFind {
     }  
 }
 ```
-## Use union find to find connected components in undirected graph
+### Use union find to find connected components in undirected graph
 ![Alt Text](https://raw.githubusercontent.com/ryancheunggit/leetcode/rise/note/assets/union_find_animation.gif)
 
 ```python
@@ -76,7 +77,7 @@ num_components = len(set(uf.find(i) for i in range(10)))
 print(num_components)
 ```
 
-## Example Problems
+#### Example Problems
 * 200 Number of Islands (DFS is better)
 ```java
 class Solution {
@@ -297,97 +298,3 @@ public class Solution {
 }
 ```
 # Binary Tree
-## LCA
-### Example Problems
-* 236 Lowest Common Ancestor of a Binary Tree 
-```java
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */ 
-
-class Solution {
-    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        if (p.equals(q)) return p;
-        
-        Stack<TreeNode> pathToP = this.pathTo(root, p);
-        Stack<TreeNode> pathToQ = this.pathTo(root, q);
-        
-        if (pathToP == null || pathToQ == null) return null;
-        
-        TreeNode prev = null;
-        while (!pathToP.isEmpty() && ! pathToQ.isEmpty()) {
-            TreeNode s = pathToP.pop();
-            TreeNode t = pathToQ.pop();
-            if (s.equals(t)) {
-                prev = s;
-            } else {
-                break;
-            }
-        }
-        return prev;
-    }
-    
-    public Stack<TreeNode> pathTo(TreeNode tree, TreeNode n) {
-        // Two base cases
-        if (tree == null) return null;
-        if (tree.equals(n)) {
-            Stack<TreeNode> s = new Stack<TreeNode>();
-            s.push(tree);
-            return s;
-        }
-        
-        // Assume each node is unique in the tree
-        Stack<TreeNode> left = pathTo(tree.left, n);
-        Stack<TreeNode> right = pathTo(tree.right, n);
-        if (left != null) {
-            left.push(tree);
-            return left;
-        }
-        if (right != null) {
-            right.push(tree);
-            return right;
-        }
-        return null;
-    }
-}
-```
-
-```java
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
-class Solution {
-    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        if (root == null){
-            return null;
-        }
-        
-        if (root == p || root == q) {
-            return root;
-        } 
-        
-        TreeNode left = lowestCommonAncestor(root.left, p, q);
-        TreeNode right = lowestCommonAncestor(root.right, p, q);
-        
-        if (left != null && right != null) {
-            return root;
-        } else if (left == null && right == null) {
-            return null;
-        }
-        
-        return left != null ? left : right;
-    }
-}
-```
