@@ -1,4 +1,4 @@
-# I. LeetCode Log
+# I. [LeetCode Log](https://github.com/snowyaya/LeetCode-Daily-Practice/blob/master/LeetCode%20Log.md)
 # II. LeetCode-Practice-Explanation
 This table is the record of the LeetCode problems I have solved and the link to my video explanation is also attached.
 | Problem |Type | Video | To be careful with | Useful resources
