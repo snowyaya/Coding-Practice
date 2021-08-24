@@ -1,7 +1,10 @@
 Note: <br/>
 This document is used to keep track of the solved LeetCode problems. <br/>
 Credit to [胖头龙的刷题笔记](https://www.1point3acres.com/bbs/thread-678970-1-1.html). <br/>
-My solution to those problems is [here](https://github.com/snowyaya/LeetCode-Daily-Practice).
+[Joshua LeetCode Summary](http://joshuablog.herokuapp.com/Leetcode-%E6%80%BB%E7%BB%93.html) <br/>
+
+My solution are [here](https://github.com/snowyaya/LeetCode-Daily-Practice).
+
 # I. Binary Search
 ## 1. 朴素二分法
 ## 2. 答案二分法
