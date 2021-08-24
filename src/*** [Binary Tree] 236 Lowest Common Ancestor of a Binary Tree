@@ -1,0 +1,67 @@
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+// Time
+// Space
+class Solution {
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if (p.equals(q)) return p;
+        
+        Stack<TreeNode> pathToP = this.pathTo(root, p);
+        Stack<TreeNode> pathToQ = this.pathTo(root, q);
+        
+        if (pathToP == null || pathToQ == null) return null;
+        
+        TreeNode prev = null;
+        while (!pathToP.isEmpty() && ! pathToQ.isEmpty()) {
+            TreeNode s = pathToP.pop();
+            TreeNode t = pathToQ.pop();
+            if (s.equals(t)) {
+                prev = s;
+            } else {
+                break;
+            }
+        }
+        return prev;
+    }
+    
+    public Stack<TreeNode> pathTo(TreeNode tree, TreeNode n) {
+        // Two base cases
+        if (tree == null) return null;
+        if (tree.equals(n)) {
+            Stack<TreeNode> s = new Stack<TreeNode>();
+            s.push(tree);
+            // System.out.println("tree val - " + tree.val);
+            return s;
+        }
+        
+        // Assume each node is unique in the tree
+        // if (tree.left != null) {
+        //     System.out.println("path to left ran " + tree.left.val);
+        // }
+        Stack<TreeNode> left = pathTo(tree.left, n);
+        // if (tree.right != null) {
+        //     System.out.println("path to right ran " + tree.right.val);
+        // }
+        Stack<TreeNode> right = pathTo(tree.right, n);
+        
+        
+        if (left != null) {
+            left.push(tree);
+            // System.out.println("left val - " + tree.val);
+            return left;
+        }
+        if (right != null) {
+            right.push(tree);
+            // System.out.println("right val - " + tree.val);
+            return right;
+        }
+        return null;
+    }
+}
