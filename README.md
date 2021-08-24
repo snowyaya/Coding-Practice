@@ -1,4 +1,5 @@
-# LeetCode-Practice-Explanation
+# I. LeetCode Log
+# II. LeetCode-Practice-Explanation
 This table is the record of the LeetCode problems I have solved and the link to my video explanation is also attached.
 | Problem |Type | Video | To be careful with | Useful resources
 | --- | --- | --- | --- | --- |
@@ -8,14 +9,14 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | 236 | Binary Tree| [Lowest Common Ancestor of a Binary Tree: part1](https://drive.google.com/file/d/1UpiVikwsjdzRJhoi3R5qLqmQjDUgcO2E/view?usp=sharing) [part2](https://drive.google.com/file/d/1rM6KERa6JoJCmSFzDg3hHFcME7dqGs0O/view?usp=sharing)|
 | 56 | Pointer, Interval | [Merge Intervals](https://drive.google.com/file/d/1da-Sk9Umm4WeYN4bsMW_WsUE_1CHO2aQ/view?usp=sharing) | sort 2D array by the first value of nested array:<br /> ```Arrays.sort(intervals, (array1, array2) -> Integer.compare(array1[0], array2[0]))```;<br /> convert a list of array to a 2D array:<br /> ```list.toArray(new int[list.size()][])```;| [Why do we use Lamda](https://www.programcreek.com/2014/01/why-lambda-java-8/)<br /> [Deep understanding of Arrays.sort()](https://www.programcreek.com/2013/11/arrays-sort-comparator/)<br /> [5 different Lamda expression](https://www.programcreek.com/2014/01/5-different-syntax-of-lambda-expression/)<br /> |
 
-# Data Structure and Algorithms
-## Recursion
+# III. Data Structure and Algorithms
+## 1. Recursion
 [Recurison in Programming (freeCodeCamp)](https://www.youtube.com/watch?v=IJDJ0kBx2LM)
 ## Big O Notation
 [Big O Notation(freeCodeCamp)](https://www.youtube.com/watch?v=Mo4vesaut8g&t=784s)
 
-## Union Find | Disjoint Sets
-### what is union find?
+## 1. Union Find | Disjoint Sets
+### 1) what is union find?
 [Reference](https://github.com/ryancheunggit/leetcode/blob/rise/note/union_find.md)
 * Union Find is a data structure keeps track of a set of elements that are partitioned into a number of disjoint subsets.
 * It has two operations `union(p, q)` and `find(p)`.
@@ -25,7 +26,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 * The algorithm can be used to find all connected components in a network.
 * It is also used in kruskal's algorithm to find the minimal spanning tree for a graph.
 
-### Algorithms
+### 2) Algorithms
 * William Fiset
    * [Union Find Intro](https://www.youtube.com/watch?v=ibjEGG7ylHk&t=0s)
    * [Union find kruskal's algorithm](https://www.youtube.com/watch?v=JZBQLXgSGfs&t=0s)
@@ -35,7 +36,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 * Tushar Roy
    * [Disjoint Sets using union by rank and path compression Graph Algorithm](https://www.youtube.com/watch?v=ID00PMy0-vE&t=1s)
 
-### Implementation (Java)
+### 3) Implementation (Java)
 ```java
 public class UnionFind {
     private int[] parent;
@@ -71,7 +72,7 @@ public class UnionFind {
     }  
 }
 ```
-### Use union find to find connected components in undirected graph
+### 4) Use union find to find connected components in undirected graph
 ![Alt Text](https://raw.githubusercontent.com/ryancheunggit/leetcode/rise/note/assets/union_find_animation.gif)
 
 ```python
@@ -82,4 +83,4 @@ for p, q in connections: uf.union(p, q)
 num_components = len(set(uf.find(i) for i in range(10)))
 print(num_components)
 ```
-## Binary Tree
+## 3. Binary Tree
