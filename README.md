@@ -84,3 +84,12 @@ num_components = len(set(uf.find(i) for i in range(10)))
 print(num_components)
 ```
 ## 3. Binary Tree
+### 1) Traversal
+#### a) Inorder
+
+#### b) Preorder
+
+#### c) Postorder
+
+#### d) Level order
+
