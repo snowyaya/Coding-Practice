@@ -297,7 +297,8 @@ public class Solution {
 }
 ```
 # Binary Tree
-## Example Problems
+## LCA
+### Example Problems
 * 236 Lowest Common Ancestor of a Binary Tree 
 ```java
 /**
@@ -308,9 +309,7 @@ public class Solution {
  *     TreeNode right;
  *     TreeNode(int x) { val = x; }
  * }
- */
- 
-// Iterative 
+ */ 
 
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
@@ -360,7 +359,6 @@ class Solution {
 ```
 
 ```java
-// Recursive
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
