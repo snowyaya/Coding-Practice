@@ -17,6 +17,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | [206](https://leetcode.com/problems/reverse-linked-list/) | LinkedList, Recursion | Reverse Linked List | 
 | [700](https://leetcode.com/problems/search-in-a-binary-search-tree/) | BST, Recursion | Search in a Binary Search Tree |
 | [119](https://leetcode.com/problems/pascals-triangle-ii/) | Array, Recursion | Pascal's Triangle II |
+| [70](https://leetcode.com/problems/climbing-stairs/) | Array, Recursion | Climb Stairs |
 
 # III. Data Structure and Algorithms
 ## 1. Recursion
