@@ -12,7 +12,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | 94 | Binary Tree | Inorder Traversal |
 | 144 | Binary Tree | Preorder Traversal | If use iteration, investigate root.right before root.left because of using stack |
 | 145 | Binary Tree | Postorder Traversal |
-| 344 | String, Recursion | 
+| 344 | String, Recursion | Reverse String
 
 # III. Data Structure and Algorithms
 ## 1. Recursion
