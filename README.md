@@ -203,6 +203,33 @@ public void postorderTraversal(TreeNode root) {
 
 #### d) Level order
 ```java
+// Recursive
+class LevelOrderTraversal {
+   List<List<Integer>> levels = new ArrayList<List<Integer>>();
+
+   public void helper(TreeNode node, int level) {
+     // start the current level
+     if (levels.size() == level)
+         levels.add(new ArrayList<Integer>());
+
+      // fulfil the current level
+      levels.get(level).add(node.val);
+
+      // process child nodes for the next level
+      if (node.left != null)
+         helper(node.left, level + 1);
+      if (node.right != null)
+         helper(node.right, level + 1);
+   }
+
+   public List<List<Integer>> levelOrder(TreeNode root) {
+     if (root == null) return levels;
+     helper(root, 0);
+     return levels;
+   }
+}
+
+// Iterative
 public List<List<Integer>> levelOrder(TreeNode root) {
    List<List<Integer>> output = new ArrayList<>();
    if (root == null) return output;
@@ -225,5 +252,21 @@ public List<List<Integer>> levelOrder(TreeNode root) {
       output.add(levelList);
    }
    return output;
+}
+
+public void levelOrder(TreeNode root) {
+   if (root == null) return output;
+   Queue<TreeNode> q = new LinkedList<TreeNode>();
+   q.add(root);
+   while (!q.isEmpty()) {
+       TreeNode current = q.remove();
+       System.out.println(current.val)
+       if (current.left != null) {
+           q.add(current.left);
+       }
+       if (current.right != null) {
+           q.add(current.right);
+       }
+   }
 }
 ```
