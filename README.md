@@ -16,6 +16,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | [24](https://leetcode.com/problems/swap-nodes-in-pairs/) | LinkedList, Recursion | Swap Nodes in Pairs | When using iteration, use a node temp, a node node, a node prev; remember the head is updated out of the while loop. |
 | [206](https://leetcode.com/problems/reverse-linked-list/) | LinkedList, Recursion | Reverse Linked List | 
 | [700](https://leetcode.com/problems/search-in-a-binary-search-tree/) | BST, Recursion | Search in a Binary Search Tree |
+| [119](https://leetcode.com/problems/pascals-triangle-ii/) | Array, Recursion | Pascal's Triangle II |
 
 # III. Data Structure and Algorithms
 ## 1. Recursion
