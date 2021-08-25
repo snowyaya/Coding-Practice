@@ -85,19 +85,19 @@ print(num_components)
 ```
 ## 3. Binary Tree
 ### 1) Traversal
-#### a) Inorder
+#### a) Inorder (left -> root -> right)
 ```java
 // Recursive
 public void inorderTraversal(TreeNode root) {
-  // left, root, right
-  if (root == null) return;
-  if (root.left != null) {
+   // left, root, right
+   if (root == null) return;
+   if (root.left != null) {
       inorderTraversal(root.left, output);
-  }
-  System.out.println(root.val);
-  if (root.right != null) {
+   }
+   System.out.println(root.val);
+   if (root.right != null) {
       inorderTraversal(root.right, output);
-  }
+   }
 }
 
 // Iterative
@@ -125,26 +125,26 @@ public List<Integer> inorderTraversal(TreeNode root) {
 }
 ```
 
-#### b) Preorder
+#### b) Preorder (root -> left -> right; iterative investigate root.right then root.left)
 ```java
 // Recursive
 private void preOrderTraversal(TreeNode root) {
-  if (root == null) return;
-  Syste.out.println(root.val);
-  if (root.left != null) {
+   if (root == null) return;
+   Syste.out.println(root.val);
+   if (root.left != null) {
       preOrderTraversal(root.left, output);
-  }
-  if (root.right != null) {
+   }
+   if (root.right != null) {
       preOrderTraversal(root.right, output);
-  }
+   }
 }
 
 // Iterative
 public void preorderTraversal(TreeNode root) {
-  if (root == null) return output;
-  Stack<TreeNode> s = new Stack<TreeNode>();
-  s.push(root);
-  while (!s.isEmpty()) {
+   if (root == null) return output;
+   Stack<TreeNode> s = new Stack<TreeNode>();
+   s.push(root);
+   while (!s.isEmpty()) {
       root = s.pop();
       System.out.println(root.val);
       if (root.right != null) {
@@ -153,12 +153,53 @@ public void preorderTraversal(TreeNode root) {
       if (root.left != null) {
           s.push(root.left);
       }
-  }
-  return output;
+   }
+   return output;
 }
 ```
 
-#### c) Postorder
+#### c) Postorder (left -> right -> root)
+```java
+// Recursive
+public void postorderTraversal(TreeNode root) {
+   if (root == null) return;
+   if (root.left != null) {
+      postorderTraversal(root.left, output);
+   }
+   if (root.right != null) {
+      postorderTraversal(root.right, output);
+   }
+   System.out.println(root.val);
+}
+
+// Iterative
+public void postorderTraversal(TreeNode root) {
+   // left -> right -> root
+   if (root == null) return;
+   Stack<TreeNode> s = new Stack<TreeNode>();
+   TreeNode current = root;
+   while (current != null || !s.isEmpty()) {
+      if (current != null) {
+          s.push(current);
+          current = current.left;
+      } else {
+          TreeNode temp = s.peek().right;
+          if (temp == null) {
+              temp = s.pop();
+              System.out.println(temp.val);
+              while (!s.isEmpty() && temp == s.peek().right) {
+                  temp = s.pop();
+                  System.out.println(temp.val);
+              }
+          } else {
+              current = temp;
+          }
+      }
+   }
+
+   return output;
+}        
+```
 
 #### d) Level order
 
