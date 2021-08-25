@@ -10,7 +10,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | 56 | Pointer, Interval | [Merge Intervals](https://drive.google.com/file/d/1da-Sk9Umm4WeYN4bsMW_WsUE_1CHO2aQ/view?usp=sharing) | sort 2D array by the first value of nested array:<br /> ```Arrays.sort(intervals, (array1, array2) -> Integer.compare(array1[0], array2[0]))```;<br /> convert a list of array to a 2D array:<br /> ```list.toArray(new int[list.size()][])```;| [Why do we use Lamda](https://www.programcreek.com/2014/01/why-lambda-java-8/)<br /> [Deep understanding of Arrays.sort()](https://www.programcreek.com/2013/11/arrays-sort-comparator/)<br /> [5 different Lamda expression](https://www.programcreek.com/2014/01/5-different-syntax-of-lambda-expression/)<br /> |
 | 102 | Binary Tree | Level Order Traversal |
 | 94 | Binary Tree | Inorder Traversal |
-| 144 | Binary Tree | Preorder Traversal |
+| 144 | Binary Tree | Preorder Traversal | | If use iteration, investigate root.right before root.left because of using stack |
 | 145 | Binary Tree | Postorder Traversal |
 
 # III. Data Structure and Algorithms
