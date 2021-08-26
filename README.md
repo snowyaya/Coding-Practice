@@ -477,3 +477,69 @@ We illustrate a strategy in the following figure, to reduce the search zones int
 First, we choose the middle point on the column which divides the matrix into two sub-matrices. We then fix on this middle column to further determine an optimal row to divide the matrix. We scan the elements along the chosen middle column, to locate the boundary where the value of the element just goes beyond the target value, i.e. *V_i-1 < target < V_i*. From this point, we divide the original matrix into 4 sub-matrices. And we just need to zoom into the bottom left and top right sub-matrices to look for the target value, while ignoring the top left and bottom right sub-matrices.
 
 We ignore the top left sub-matrix that ends with the element *V_i-1*, because all the elements within this sub-matrix would be less than the target value. Similarly, we ignore the bottom right sub-matrices that starts with the element *V_i*, because we know that all the elements within this sub-matrix would be greater than the target value.
+
+## 6. Quick Sort
+### 1) Intuition
+Following the pseudocode template of the divide-and-conquer algorithm, as we presented before, the quick sort algorithm can be implemented in three steps, namely dividing the problem, solving the subproblems and combining the results of subproblems.
+
+In detail, given a list of values to sort, the quick sort algorithm works in the following steps:
+```
+1. First, it selects a value from the list, which serves as a pivot value to divide the list into two sublists. One sublist contains all the values that are less than the pivot value, while the other sublist contains the values that are greater than or equal to the pivot value. This process is also called partitioning. The strategy of choosing a pivot value can vary. Typically, one can choose the first element in the list as the pivot, or randomly pick an element from the list.
+
+2. After the partitioning process, the original list is then reduced into two smaller sublists. We then recursively sort the two sublists.
+
+3. After the partitioning process, we are sure that all elements in one sublist are less or equal than any element in another sublist. Therefore, we can simply concatenate the two sorted sublists that we obtain in step [2] to obtain the final sorted list. 
+```
+The base cases of the recursion in step [2] are either when the input list is empty or the empty list contains only a single element. In either case, the input list can be considered as sorted already.
+
+As one can see, the essential idea of the quick sort algorithm is the `partitioning process`, which elegantly reduces the problems into smaller scale and meanwhile moves towards the final solution, i.e. after each partitioning, the overall values become more ordered. 
+
+### 2) Algorithm
+In the following figure, we demonstrate how the quick sort algorithm works to sort a list of integer values. The input list contains 8 elements.
+![alt text](https://assets.leetcode.com/uploads/2019/03/24/quicksort.png)
+
+As shown above, in the first round of quick sort, we pick the last element `4` as the `pivot`, which partitions the original list into two sublists: `[1, 3, 2]` and `[8, 7, 6, 5]` respectively.
+
+Next, we recursively sort the above two sublists. For instance, for the sublist `[1, 3, 2]`, again we pick the last element (i.e. 2) as the pivot value. After this partitioning, we obtain two sublists with a single element, which is the base case of the recursion.
+
+Once we sorted the sublists `[1, 3, 2]` and `[8, 7, 6, 5]` respectively, we simply concatenate the sorted results together with the pivot value (4) to form the final result, i.e. `[1, 2, 3] + [4] + [5, 6, 7, 8]`.
+
+### 3) Implementation
+```java
+public class Solution {
+
+  public void quickSort(int [] list) {
+   /* Sorts an array in the ascending order in O(n log n) time */
+    int n = list.length;
+    qSort(list, 0, n - 1);
+  }
+
+  private void qSort(int [] list, int low, int high) {
+    if (low < high) {
+      int p = partition(lst, low, hi);
+      qSort(list, low, p - 1);
+      qSort(list, p + 1, high);
+    }
+  }
+
+  private int partition(int [] list, int low, int high) {
+    /*
+      Picks the last element high as a pivot
+      and returns the index of pivot value in the sorted array */
+    int pivot = list[high];
+    int i = low;
+    for (int j = low; j < high; ++j) {
+      if (list[j] < pivot) {
+        int tmp = list[i];
+        list[i] = list[j];
+        list[j] = tmp;
+        i++;
+      }
+    }
+    int tmp = list[i];
+    list[i] = list[high];
+    list[hi] = tmp;
+    return i;
+  }
+}
+```
