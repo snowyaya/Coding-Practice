@@ -305,7 +305,7 @@ Let us look at a concrete example to see how the top-down merge sort algorithm w
 ```
 The recursion in step (2) would reach the base case where the input list is either empty or contains a single element (see the nodes in blue from the above figure).
 
-Now, we have reduced the problem down to a merge problem, which is much simpler to solve. Merging two sorted lists can be done in **linear time complexity O(N)**, where {N}N is the total lengths of the two lists to merge.
+Now, we have reduced the problem down to a merge problem, which is much simpler to solve. Merging two sorted lists can be done in **linear time complexity O(N)**, where N is the total lengths of the two lists to merge.
 
 
 ![Alt Text](https://assets.leetcode.com/uploads/2019/04/06/merge_sort_merge.gif)
@@ -360,4 +360,4 @@ The overall time complexity of the merge sort algorithm is {O(N \log{N})}O(NlogN
 ```
 Taking into account the complexity of the above two parts in the merge sort algorithm, we conclude that the overall time complexity of merge sort is **O(NlogN)**.
 
-The space complexity of the merge sort algorithm is **O(N)**, where {N}N is the length of the input list, since we need to keep the sublists as well as the buffer to hold the merge results at each round of merge process.
+The space complexity of the merge sort algorithm is **O(N)**, where N is the length of the input list, since we need to keep the sublists as well as the buffer to hold the merge results at each round of merge process.
