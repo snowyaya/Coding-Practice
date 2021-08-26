@@ -379,8 +379,7 @@ As you can see, divide-and-conquer algorithm is naturally implemented in the for
 There are in general three steps that one can follow in order to solve the problem in a divide-and-conquer manner.
 
 ```
-1. Divide. Divide the problem *S* into a set of subproblems: *\{S_1, S_2, ... S_n\}* where *n≥2*, 
-i.e. there are usually more than one subproblem.
+1. Divide. Divide the problem S into a set of subproblems: S_1, S_2, ... S_n where n≥2.
 2. Conquer. Solve each subproblem recursively. 
 3. Combine. Combine the results of each subproblem.
 ```
@@ -404,7 +403,7 @@ def divide_and_conquer( S ):
     return combine([R1, R2,... Rn])
 ```
 
-As one can see from the above template, the essential part of the divide and conquer is to figure out the ```recurrence relationship``` between the subproblems and the original problem, which subsequently defines the functions of ```divide()``` and ```combine()```. 
+As one can see from the above template, the essential part of the divide and conquer is to figure out the `recurrence relationship` between the subproblems and the original problem, which subsequently defines the functions of `divide()` and `combine()`. 
 
 ### 3) Examples
 #### a) Validate Binary Search Tree
@@ -423,17 +422,16 @@ Below is an example of a BST shown in the following figure.
 ![alt text](https://assets.leetcode.com/uploads/2019/03/31/bst_dac.png)
 
 ```
-1. In the first step, we divide the tree into two subtrees -- its left child and right child. (**Divide**)
-2. Then in the next step, we recursively validate each subtree is indeed a binary search tree. (**Conquer**)
-3. Upon the results of the subproblems from Step 2, we return true if and only 
-if both subtrees are both valid BST. (**Combine**)
+1. In the first step, we divide the tree into two subtrees -- its left child and right child. (Divide)
+2. Then in the next step, we recursively validate each subtree is indeed a binary search tree. (Conquer)
+3. Upon the results of the subproblems from Step 2, we return true if and only if both subtrees are both valid BST. (Combine)
 ```
 
 The recursion in **Step 2**. would reach the base case where the subtree is either empty or contains a single node, which is a valid BST itself.
 
 #### b) Search in A 2D Matrix
 
-Write an efficient algorithm that searches for an integer value in an {[m \times n]} matrix. This matrix has the following properties:
+Write an efficient algorithm that searches for an integer value in an *mn* matrix. This matrix has the following properties:
 ```
 Integers in each row are sorted in ascending from left to right.
 Integers in each column are sorted in ascending from top to bottom.
@@ -443,10 +441,10 @@ There are several ways to solve the above problem. Here we give an overall idea 
 As one might notice, given the matrix, if we divide it into some sub-matrices by cutting it either by row and/or column, the resulting matrices would still keep the above two properties of the original matrix. Given the above insight, here is how we can apply the template to solve the problem.
 
 ```
-1. We divide the matrix into 4 sub-matrices by choosing a pivot point based on a row and a column. (**Divide**)
-2. Then we recursively look into each sub-matrix to search for the desired target. (**Conquer**)
+1. We divide the matrix into 4 sub-matrices by choosing a pivot point based on a row and a column. (Divide)
+2. Then we recursively look into each sub-matrix to search for the desired target. (Conquer)
 3. If we find the target in either of the sub-matrices, we stop the search and 
-return the result immediately. (**Combine**)
+return the result immediately. (Combine)
 ```
 
 The base cases in the above recursion would be either the input matrix is empty or it contains only a single element. As a simple strategy, one can choose the middle point both on the row and column as the pivot points to divide the matrix.
@@ -468,6 +466,6 @@ The above divide-and-conquer algorithm can still be further improved, which we w
 We illustrate a strategy in the following figure, to reduce the search zones into 2 sub-matrices, instead of 3 sub-matrices.
 ![alt text](https://assets.leetcode.com/uploads/2019/03/31/search_2d_matrix.png)
 
-First, we choose the middle point on the column which divides the matrix into two sub-matrices. We then fix on this middle column to further determine an optimal row to divide the matrix. We scan the elements along the chosen middle column, to locate the boundary where the value of the element just goes beyond the target value, i.e. *V_{i-1} < \text{target} < V_i*. From this point, we divide the original matrix into 4 sub-matrices. And we just need to zoom into the bottom left and top right sub-matrices to look for the target value, while ignoring the top left and bottom right sub-matrices.
+First, we choose the middle point on the column which divides the matrix into two sub-matrices. We then fix on this middle column to further determine an optimal row to divide the matrix. We scan the elements along the chosen middle column, to locate the boundary where the value of the element just goes beyond the target value, i.e. *V_{i-1} < target < V_i*. From this point, we divide the original matrix into 4 sub-matrices. And we just need to zoom into the bottom left and top right sub-matrices to look for the target value, while ignoring the top left and bottom right sub-matrices.
 
 We ignore the top left sub-matrix that ends with the element *V_i-1*, because all the elements within this sub-matrix would be less than the target value. Similarly, we ignore the bottom right sub-matrices that starts with the element *V_i*, because we know that all the elements within this sub-matrix would be greater than the target value.
