@@ -449,9 +449,9 @@ The base cases in the above recursion would be either the input matrix is empty 
 
 Do we really need to look into each of the divided 4 sub-matrices? Notice that the smallest and the largest element of the input matrix is located in the top left and bottom right corner respectively, which also applies to each of the divided sub-matrices. In fact, we need to only look into 3 of the sub-matrices.
 
-`1. If our target is equal to the pivot, we have found our target and immediately return the result. <br/>`
-`2. If our target is less than the pivot, we can discard the bottom-right sub-matrix. All elements in that region must be greater or equal than the pivot. <br/>`
-`3. If our target is greater than the pivot, we can discard the top-left sub-matrix. All elements in that region must be less than or equal than the pivot. <br/>`
+`1. If our target is equal to the pivot, we have found our target and immediately return the result.
+2. If our target is less than the pivot, we can discard the bottom-right sub-matrix. All elements in that region must be greater or equal than the pivot.
+3. If our target is greater than the pivot, we can discard the top-left sub-matrix. All elements in that region must be less than or equal than the pivot.`
 
 The above divide-and-conquer algorithm can still be further improved, which we will provide insights below.
 
