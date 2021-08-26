@@ -543,3 +543,12 @@ public class Solution {
   }
 }
 ```
+### 4) Complexity
+Depending on the pivot values, the time complexity of the quick sort algorithm can vary from *O(NlogN)* in the best case and *O(N^2)* in the worst case, with *N* as the length of the list.
+
+In the best case, if the pivot value happens to be median value of the list, then at each partition the list would be divided into two sublists of equal size. At the end, we actually construct a balanced binary search tree (BST) out of the list. One can infer that the height of the tree would be *logN*, and at each level of the tree the input list would be scanned once with the complexity *O(N)* due to the partitioning process. As a result, the overall time complexity of the algorithm in this case would be *O(NlogN)*.
+
+While in the worst case, if the pivot value happens to be the extreme value of the list, i.e. either the smallest or the biggest element in the list, then at each partition we end up with only one single sublist (i.e. the other sublist is empty). The reduction of the problem still works, but at a rather slow pace, i.e. one element at a time. The partitioning would then occur *N* times, and each time the partitioning scans at most *N* elements. Therefore, the overall time complexity of the quick sort algorithm in this case would be *O(N^2)*. Actually, in this case, the quick sort algorithm ends up to be exactly as the insertion sort.
+
+On average, as proved mathematically, the time complexity of quick sort is *O(NlogN)*.  
+
