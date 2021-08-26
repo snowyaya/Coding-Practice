@@ -283,3 +283,81 @@ public void levelOrder(TreeNode root) {
    }
 }
 ```
+## 4. Merge Sort
+### 1) Intuition
+There are two approaches to implement the merge sort algorithm: top down or bottom up. Here, we will explain the top down approach as it can be implemented naturally using recursion.
+
+The merge sort algorithm can be divided into three steps, like all divide-and-conquer algorithms:
+
+```
+1. Divide the given unsorted list into several sublists.  (Divide)
+2. Sort each of the sublists recursively.  (Conquer)
+3. Merge the sorted sublists to produce new sorted list.  (Combine)
+```
+### 2) Top-Down Approach
+Let us look at a concrete example to see how the top-down merge sort algorithm works. As shown in the figure below, we are given an unordered list with 8 elements. The task is to sort the list in ascending order. 
+
+![alt text](https://assets.leetcode.com/uploads/2019/04/15/topdown_mergesort.png)
+```
+1. In the first step, we divide the list into two sublists.  (Divide)
+2. Then in the next step, we recursively sort the sublists in the previous step.  (Conquer)
+3. Finally we merge the sorted sublists in the above step repeatedly to obtain the final list of sorted elements.  (Combine)
+```
+The recursion in step (2) would reach the base case where the input list is either empty or contains a single element (see the nodes in blue from the above figure).
+
+Now, we have reduced the problem down to a merge problem, which is much simpler to solve. Merging two sorted lists can be done in **linear time complexity {O(N)}O(N)**, where {N}N is the total lengths of the two lists to merge.
+
+
+![Alt Text](https://assets.leetcode.com/uploads/2019/04/06/merge_sort_merge.gif)
+
+```java
+import java.util.Arrays;
+public class Solution {
+    
+    public int [] merge_sort(int [] input) {
+      if (input.length <= 1) {
+        return input;
+      }
+      int pivot = input.length / 2;
+      int [] left_list = merge_sort(Arrays.copyOfRange(input, 0, pivot));
+      int [] right_list = merge_sort(Arrays.copyOfRange(input, pivot, input.length));
+      return merge(left_list, right_list);
+    }
+    
+    public int [] merge(int [] left_list, int [] right_list) {
+      int [] ret = new int[left_list.length + right_list.length];
+      int left_cursor = 0, right_cursor = 0, ret_cursor = 0;
+
+      while (left_cursor < left_list.length && 
+             right_cursor < right_list.length) {
+        if (left_list[left_cursor] < right_list[right_cursor]) {
+          ret[ret_cursor++] = left_list[left_cursor++];
+        } else {
+          ret[ret_cursor++] = right_list[right_cursor++];
+        }
+      }
+      // append what is remain the above lists
+      while (left_cursor < left_list.length) {
+        ret[ret_cursor++] = left_list[left_cursor++];
+      }
+      while (right_cursor < right_list.length) {
+        ret[ret_cursor++] = right_list[right_cursor++];
+      }  
+      return ret;
+    }
+}
+```
+### 3) Bottom-Up Approach
+```
+In the bottom up approach, we divide the list into sublists of a single element at the beginning. Each of the sublists is then sorted already. Then from this point on, we merge the sublists two at a time until a single list remains.
+```
+![alt text](https://assets.leetcode.com/uploads/2019/04/06/mergesort.png)
+
+The overall time complexity of the merge sort algorithm is {O(N \log{N})}O(NlogN), where {N}N is the length of the input list. To calculate the complexity, we break it down to the following steps:
+```
+1. We recursively divide the input list into two sublists, until a sublist with single element remains. This dividing step computes the midpoint of each of the sublists, which takes {O(1)}O(1) time. This step is repeated NN times until a single element remains, therefore the total time complexity is O(N)O(N).
+2. Then, we repetitively merge the sublists, until one single list remains. The recursion tree in Fig. 1 or Fig. 2 above is useful for visualizing how the recurrence is iterated. As shown in the recursion tree, there are a total of NN elements on each level. Therefore, it takes O({N})O(N) time for the merging process to complete on each level. And since there are a total of \log{N}logN levels, the overall complexity of the merge process is O({N \log{N}})O(NlogN).
+```
+Taking into account the complexity of the above two parts in the merge sort algorithm, we conclude that the overall time complexity of merge sort is **O(N\log{N})O(NlogN)**.
+
+The space complexity of the merge sort algorithm is **O(N)O(N)**, where {N}N is the length of the input list, since we need to keep the sublists as well as the buffer to hold the merge results at each round of merge process.
