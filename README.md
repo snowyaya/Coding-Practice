@@ -21,8 +21,8 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | [104](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Binary Tree, Recursion | Maximum Depth of a Binary Tree |
 | [50](https://leetcode.com/problems/powx-n/) | Math, Recursion | Pow(x, n) | 1) when power < 0 <br/> 2) if n%2 == 0, binary product |
 | [21](https://leetcode.com/problems/merge-two-sorted-lists/) | LinkedList, Recursion | Merge Two Sorted Lists | 
-| [912](https://leetcode.com/problems/sort-an-array/) | Array, Merge Sort, Recursion | Sort An Array | 1) Append remaining list in the end <br/> 2) Use ```Arrays.copyOfRange(arr, start, end)``` <br/> 3) When initialize the result array ```int[] result = new int[left.length + right.length];``` |
-| [98](https://leetcode.com/problems/validate-binary-search-tree/) | Binary Search Tree, Recursion | Validate Binary Search Tree | | [Check if a binary tree is BST](https://www.youtube.com/watch?v=MILxfAbIhrE) <br/> [Image illustration](https://leetcode.com/problems/validate-binary-search-tree/discuss/229282/Neat-Java-Recursive-Solution)|
+| [912](https://leetcode.com/problems/sort-an-array/) | Array, Merge Sort, Divide and Conquer | Sort An Array | 1) Append remaining list in the end <br/> 2) Use ```Arrays.copyOfRange(arr, start, end)``` <br/> 3) When initialize the result array ```int[] result = new int[left.length + right.length];``` |
+| [98](https://leetcode.com/problems/validate-binary-search-tree/) | Binary Search Tree, Divide and Conquer | Validate Binary Search Tree | | [Check if a binary tree is BST](https://www.youtube.com/watch?v=MILxfAbIhrE) <br/> [Image illustration](https://leetcode.com/problems/validate-binary-search-tree/discuss/229282/Neat-Java-Recursive-Solution)|
 | [240](https://leetcode.com/problems/search-a-2d-matrix-ii/) | Array, Divide and Conquer | Search in 2D Array | 1) Discard the bottom right if target < pivot <br/> 2) Discard top left if target > pivot |
 
 # III. Data Structure and Algorithms
