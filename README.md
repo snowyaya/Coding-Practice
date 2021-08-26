@@ -20,6 +20,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | [70](https://leetcode.com/problems/climbing-stairs/) | Array, Recursion | Climb Stairs |
 | [104](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Binary Tree, Recursion | Maximum Depth of a Binary Tree |
 | [50](https://leetcode.com/problems/powx-n/) | Math, Recursion | Pow(x, n) | 1) when power < 0 <br/> 2) if n%2 == 0, binary product |
+| [21](https://leetcode.com/problems/merge-two-sorted-lists/) | LinkedList, Recursion | Merge Two Sorted Lists | 
 
 # III. Data Structure and Algorithms
 ## 1. Recursion
