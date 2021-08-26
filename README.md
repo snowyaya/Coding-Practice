@@ -360,7 +360,7 @@ In the bottom up approach, we divide the list into sublists of a single element 
 
 The overall time complexity of the merge sort algorithm is **O(NlogN)**, where *N* is the length of the input list. To calculate the complexity, we break it down to the following steps:
 
-`1. We recursively divide the input list into two sublists, until a sublist with single element remains. This dividing step computes the midpoint of each of the sublists, which takes O(1) time. This step is repeated N times until a single element remains, therefore the total time complexity is O(N).`
+`1. We recursively divide the input list into two sublists, until a sublist with single element remains. This dividing step computes the midpoint of each of the sublists, which takes O(1) time. This step is repeated N times until a single element remains, therefore the total time complexity is O(N). <br/>`
 `2. Then, we repetitively merge the sublists, until one single list remains. The recursion tree in Fig. 1 or Fig. 2 above is useful for visualizing how the recurrence is iterated. As shown in the recursion tree, there are a total of N elements on each level. Therefore, it takes O(N) time for the merging process to complete on each level. And since there are a total of logN levels, the overall complexity of the merge process is O(NlogN).`
 
 Taking into account the complexity of the above two parts in the merge sort algorithm, we conclude that the overall time complexity of merge sort is **O(NlogN)**.
@@ -449,9 +449,9 @@ The base cases in the above recursion would be either the input matrix is empty 
 
 Do we really need to look into each of the divided 4 sub-matrices? Notice that the smallest and the largest element of the input matrix is located in the top left and bottom right corner respectively, which also applies to each of the divided sub-matrices. In fact, we need to only look into 3 of the sub-matrices.
 
-`1. If our target is equal to the pivot, we have found our target and immediately return the result.`
-`2. If our target is less than the pivot, we can discard the bottom-right sub-matrix. All elements in that region must be greater or equal than the pivot.`
-`3. If our target is greater than the pivot, we can discard the top-left sub-matrix. All elements in that region must be less than or equal than the pivot.`
+`1. If our target is equal to the pivot, we have found our target and immediately return the result. <br/>`
+`2. If our target is less than the pivot, we can discard the bottom-right sub-matrix. All elements in that region must be greater or equal than the pivot. <br/>`
+`3. If our target is greater than the pivot, we can discard the top-left sub-matrix. All elements in that region must be less than or equal than the pivot. <br/>`
 
 The above divide-and-conquer algorithm can still be further improved, which we will provide insights below.
 
