@@ -305,7 +305,7 @@ Let us look at a concrete example to see how the top-down merge sort algorithm w
 ```
 The recursion in step (2) would reach the base case where the input list is either empty or contains a single element (see the nodes in blue from the above figure).
 
-Now, we have reduced the problem down to a merge problem, which is much simpler to solve. Merging two sorted lists can be done in **linear time complexity {O(N)}O(N)**, where {N}N is the total lengths of the two lists to merge.
+Now, we have reduced the problem down to a merge problem, which is much simpler to solve. Merging two sorted lists can be done in **linear time complexity O(N)**, where {N}N is the total lengths of the two lists to merge.
 
 
 ![Alt Text](https://assets.leetcode.com/uploads/2019/04/06/merge_sort_merge.gif)
@@ -358,6 +358,6 @@ The overall time complexity of the merge sort algorithm is {O(N \log{N})}O(NlogN
 1. We recursively divide the input list into two sublists, until a sublist with single element remains. This dividing step computes the midpoint of each of the sublists, which takes {O(1)}O(1) time. This step is repeated NN times until a single element remains, therefore the total time complexity is O(N)O(N).
 2. Then, we repetitively merge the sublists, until one single list remains. The recursion tree in Fig. 1 or Fig. 2 above is useful for visualizing how the recurrence is iterated. As shown in the recursion tree, there are a total of NN elements on each level. Therefore, it takes O({N})O(N) time for the merging process to complete on each level. And since there are a total of \log{N}logN levels, the overall complexity of the merge process is O({N \log{N}})O(NlogN).
 ```
-Taking into account the complexity of the above two parts in the merge sort algorithm, we conclude that the overall time complexity of merge sort is **O(N\log{N})O(NlogN)**.
+Taking into account the complexity of the above two parts in the merge sort algorithm, we conclude that the overall time complexity of merge sort is **O(NlogN)**.
 
-The space complexity of the merge sort algorithm is **O(N)O(N)**, where {N}N is the length of the input list, since we need to keep the sublists as well as the buffer to hold the merge results at each round of merge process.
+The space complexity of the merge sort algorithm is **O(N)**, where {N}N is the length of the input list, since we need to keep the sublists as well as the buffer to hold the merge results at each round of merge process.
