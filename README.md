@@ -28,6 +28,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | [100](https://leetcode.com/problems/same-tree/) | Binary Tree, Recursion-Iteration | Same Tree | 
 |[744](https://leetcode.com/problems/find-pivot-index/) | Array, Dynamic Programming | Find Pivot Index |
 | [747](https://leetcode.com/problems/largest-number-at-least-twice-of-others/) | Array, Sorting | Largest Number At Least Twice of Others | 
+| [66](https://leetcode.com/problems/plus-one/) | Array, Math | Plus One | 1) Edge case like 9999, just do `int[] newNumber = new int[n+1]` and `newNumber[0] = 0` <br/> 2) Loop down from length - 1, if `digit[i] < 9`, `digits[i]++`; if `digits[i] == 9`, `digits[i] = 0`. |
 
 # III. Data Structure and Algorithms
 ## 1. Recursion
