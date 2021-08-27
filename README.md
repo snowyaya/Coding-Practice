@@ -26,6 +26,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | [98](https://leetcode.com/problems/validate-binary-search-tree/) | Binary Search Tree, Divide and Conquer | Validate Binary Search Tree | | [Check if a binary tree is BST](https://www.youtube.com/watch?v=MILxfAbIhrE) <br/> [Image illustration](https://leetcode.com/problems/validate-binary-search-tree/discuss/229282/Neat-Java-Recursive-Solution)|
 | [240](https://leetcode.com/problems/search-a-2d-matrix-ii/) | Array, Divide and Conquer | Search in 2D Array | 1) Discard the bottom right if `target < pivot` <br/> 2) Discard top left if `target > pivot` |
 | [100](https://leetcode.com/problems/same-tree/) | Binary Tree, Recursion-Iteration | Same Tree | 
+|[744](https://leetcode.com/problems/find-pivot-index/) | Array, Dynamic Programming | Find Pivot Index |
 
 # III. Data Structure and Algorithms
 ## 1. Recursion
