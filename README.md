@@ -32,10 +32,11 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | [498](https://leetcode.com/problems/diagonal-traverse/) | 2D Array | Diagonal Traversal |
 | [118](https://leetcode.com/problems/pascals-triangle/) | Array | Pascal's Triangle | 1) had two base cases `return list.add(1) and return list.add (1,1)`, but the starting row never returns, because the `return list.add(1,1)` is the base case when rowIndx > 1. So the starting row is always missing in the map |
 | [67](https://leetcode.com/problems/add-binary/) | String | Add Binary | Don't know how to when to carry and chang the digit <br/> Not sure whether to use `char[]` or `String` or `int[]` | [Other's explanation](https://leetcode.com/problems/add-binary/discuss/190723/5ms-Java-solution-with-explanation-of-code-and-binary-adding.) |
-|[9](https://leetcode.com/problems/palindrome-number/) | Array | Palindrome Number | 
-|[15](https://leetcode.com/problems/3sum/) | Array | 3Sum |
-|[28](https://leetcode.com/problems/implement-strstr/) | String | Implement strStr() | 1) `while (i+lenOfNeedle <= haystack)` |
-|[14](https://leetcode.com/problems/longest-common-prefix/)| String | Longest Common Prefix | 1) use `StringBuilder` <br/> 2) `strb.append(str)` <br/> 3) sort the array at the beginning <br/> 4) `strb.toString()` |
+| [9](https://leetcode.com/problems/palindrome-number/) | Array | Palindrome Number | 
+| [15](https://leetcode.com/problems/3sum/) | Array | 3Sum |
+| [28](https://leetcode.com/problems/implement-strstr/) | String | Implement strStr() | 1) `while (i+lenOfNeedle <= haystack)` |
+| [14](https://leetcode.com/problems/longest-common-prefix/) | String | Longest Common Prefix | 1) use `StringBuilder` <br/> 2) `strb.append(str)` <br/> 3) sort the array at the beginning <br/> 4) `strb.toString()` |
+| [561](https://leetcode.com/problems/array-partition-i/) | Array | Array Partition |
 
 # III. Data Structure and Algorithms
 ## 1. Recursion
