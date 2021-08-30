@@ -35,6 +35,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 |[9](https://leetcode.com/problems/palindrome-number/) | Array | Palindrome Number | 
 |[15](https://leetcode.com/problems/3sum/) | Array | 3Sum |
 |[28](https://leetcode.com/problems/implement-strstr/) | String | Implement strStr() | 1) `while (i+lenOfNeedle <= haystack)` |
+|[14](https://leetcode.com/problems/longest-common-prefix/)| String | Longest Common Prefix | 1) use `StringBuilder` <br/> 2) `strb.append(str)` <br/> 3) sort the array at the beginning <br/> 4) `strb.toString()` |
 
 # III. Data Structure and Algorithms
 ## 1. Recursion
