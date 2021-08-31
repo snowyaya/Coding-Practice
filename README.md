@@ -43,7 +43,8 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | [167](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Array | Two Sum II: Input Arrays is Sorted | 1) use two pointers: `low` and `high` |
 | [27](https://leetcode.com/problems/remove-element/) | Array | Remove Element | 1) two pointers <br/> 2) swap the values if `nums[left] == val` and if `nums[right] != val` then `nums[left] = nums[right]` |
 | [485](https://leetcode.com/problems/max-consecutive-ones/) | Array | Max Consecutive Ones | 1) How to improve the time complexity? <br/> |
-| [151](https://leetcode.com/problems/reverse-words-in-a-string/) | String | Reverse Words in A String | 1) Be careful with multiple whitespace <br/> 2) Be careful with adding a whitespace in the end, use `if map.get(i+1) != null` |
+| [151](https://leetcode.com/problems/reverse-words-in-a-string/) | String | Reverse Words in A String | 1) Be careful with multiple whitespace <br/> 2) Be careful with adding a whitespace in the end, use `if map.get(i-1) != null` <br/> 3) Iterate the array from the end is easier |
+| [557](https://leetcode.com/problems/reverse-words-in-a-string-iii/) | String | Reverse Words in A String III | 1) Be careful with the ending whitespace <br/> 2) Use `int i = 0` to iterate over the `string array` |
 
 # III. Data Structure and Algorithms
 ## 1. Recursion
