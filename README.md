@@ -39,7 +39,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | [561](https://leetcode.com/problems/array-partition-i/) | Array | Array Partition |
 | [217](https://leetcode.com/problems/contains-duplicate/) | Array, Hash Table | Contains Duplicates |
 | [53](https://leetcode.com/problems/maximum-subarray/) | Array | Max Subarray |
-| [88](https://leetcode.com/problems/merge-sorted-array/) | Array | Merge Sorted Array | 1) set pointers to the end of the array <br/> 2) compare from the back of the array |
+| [88](https://leetcode.com/problems/merge-sorted-array/) | Array | Merge Sorted Array | 1) set pointers to the end of the array <br/> 2) compare from the back of the array<br/> 3) 3 pointers|
 
 # III. Data Structure and Algorithms
 ## 1. Recursion
