@@ -42,6 +42,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | [88](https://leetcode.com/problems/merge-sorted-array/) | Array | Merge Sorted Array | 1) set pointers to the end of the array <br/> 2) compare from the back of the array<br/> 3) 3 pointers|
 | [167](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Array | Two Sum II: Input Arrays is Sorted | 1) use two pointers: `low` and `high` |
 | [27](https://leetcode.com/problems/remove-element/) | Array | Remove Element | 1) two pointers <br/> 2) swap the values if `nums[left] == val` and if `nums[right] != val` then `nums[left] = nums[right]` |
+| [485](https://leetcode.com/problems/max-consecutive-ones/) | Array | Max Consecutive Ones | 1) How to improve the time complexity? <br/> |
 
 # III. Data Structure and Algorithms
 ## 1. Recursion
