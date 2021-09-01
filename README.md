@@ -47,6 +47,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | [557](https://leetcode.com/problems/reverse-words-in-a-string-iii/) | String | Reverse Words in A String III | 1) Be careful with the ending whitespace <br/> 2) Use `int i = 0` to iterate over the `string array` |
 | [283](https://leetcode.com/problems/move-zeroes/) | Array | Move Zeroes | 1) Update `nums[count++]` to the `non-zero element`, then update `nums[count++]` to `zero` |
 | [209](https://leetcode.com/problems/minimum-size-subarray-sum/) | Array | Minimum Size Array Sum | 1) If `sum >= target`, update the `min`, update the sum `sum = sum - nums[ptr1] - nums[ptr2]` |
+| [189](https://leetcode.com/problems/rotate-array/) | Array | Rotate Array | 1) Use `O(n)` to figure out how the position of each element changes |
 
 # III. Data Structure and Algorithms
 ## 1. Recursion
