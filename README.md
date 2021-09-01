@@ -48,6 +48,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | [283](https://leetcode.com/problems/move-zeroes/) | Array | Move Zeroes | 1) Update `nums[count++]` to the `non-zero element`, then update `nums[count++]` to `zero` |
 | [209](https://leetcode.com/problems/minimum-size-subarray-sum/) | Array | Minimum Size Array Sum | 1) If `sum >= target`, update the `min`, update the sum `sum = sum - nums[ptr1] - nums[ptr2]` |
 | [189](https://leetcode.com/problems/rotate-array/) | Array | Rotate Array | 1) Use `O(n)` to figure out how the position of each element changes |
+| [26](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Array | Remove Duplicates from Sorted Array | 1) one pointer for the current element, another for the next unique element <br/> 2) Update `curr += 1`, then `nums[curr] = nums[i]` |
 
 # III. Data Structure and Algorithms
 ## 1. Recursion
