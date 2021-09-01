@@ -51,6 +51,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | [26](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Array | Remove Duplicates from Sorted Array | 1) one pointer for the current element, another for the next unique element <br/> 2) Update `curr += 1`, then `nums[curr] = nums[i]` |
 | [498](https://leetcode.com/problems/diagonal-traverse/) | Array | Diagonal Traverse | Key Observation : If you write down the matrix in terms of the indices, you will notice that whenever the indices add to an even number, we go in the upward direction, else in the downward direction. |
 | [54](https://leetcode.com/problems/spiral-matrix/) | Array | Spiral Matrix | 
+| [36](https://leetcode.com/problems/valid-sudoku/) | Array | Valid Sudoku | 
 
 # III. Data Structure and Algorithms
 ## 1. Recursion
