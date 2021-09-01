@@ -46,6 +46,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | [151](https://leetcode.com/problems/reverse-words-in-a-string/) | String | Reverse Words in A String | 1) Be careful with multiple whitespace <br/> 2) Be careful with adding a whitespace in the end, use `if map.get(i-1) != null` <br/> 3) Iterate the array from the end is easier |
 | [557](https://leetcode.com/problems/reverse-words-in-a-string-iii/) | String | Reverse Words in A String III | 1) Be careful with the ending whitespace <br/> 2) Use `int i = 0` to iterate over the `string array` |
 | [283](https://leetcode.com/problems/move-zeroes/) | Array | Move Zeroes | 1) Update `nums[count++]` to the `non-zero element`, then update `nums[count++]` to `zero` |
+| [209](https://leetcode.com/problems/minimum-size-subarray-sum/) | Array | Minimum Size Array Sum | 1) If `sum >= target`, update the `min`, update the sum `sum = sum - nums[ptr1] - nums[ptr2]` |
 
 # III. Data Structure and Algorithms
 ## 1. Recursion
