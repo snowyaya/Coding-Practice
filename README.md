@@ -52,6 +52,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | [498](https://leetcode.com/problems/diagonal-traverse/) | Array | Diagonal Traverse | Key Observation : If you write down the matrix in terms of the indices, you will notice that whenever the indices add to an even number, we go in the upward direction, else in the downward direction. |
 | [54](https://leetcode.com/problems/spiral-matrix/) | Array | Spiral Matrix | 
 | [36](https://leetcode.com/problems/valid-sudoku/) | Array | Valid Sudoku | 
+| [74](https://leetcode.com/problems/search-a-2d-matrix/) | Array | Seach A 2D Matrix |
 
 # III. Data Structure and Algorithms
 ## 1. Recursion
