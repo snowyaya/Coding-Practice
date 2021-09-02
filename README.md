@@ -57,6 +57,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | [383](https://leetcode.com/problems/ransom-note/) | String | Ransom Note | 
 | [242](https://leetcode.com/problems/valid-anagram/) | String | Valid Anagram |
 | [141](https://leetcode.com/problems/linked-list-cycle/) | Linked List | Linked List Cycle |
+| [21](https://leetcode.com/problems/merge-two-sorted-lists/) | Linked List | Merge Two Sorted Lists | 1) if `l1.val < l2.val`, `l1.next = mergeTwoLists(l1.next, l2)`; if `l1.val >= l2.val`, `l2.next = mergeTwoLists(l1, l2.next)`; |
 
 # III. Data Structure and Algorithms
 ## 1. Recursion
