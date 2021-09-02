@@ -58,7 +58,8 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | [242](https://leetcode.com/problems/valid-anagram/) | String | Valid Anagram |
 | [141](https://leetcode.com/problems/linked-list-cycle/) | Linked List | Linked List Cycle |
 | [21](https://leetcode.com/problems/merge-two-sorted-lists/) | Linked List | Merge Two Sorted Lists | 1) if `l1.val < l2.val`, `l1.next = mergeTwoLists(l1.next, l2)`; if `l1.val >= l2.val`, `l2.next = mergeTwoLists(l1, l2.next)`; |
-| [203](https://leetcode.com/problems/remove-linked-list-elements/) | Linked List | Remove Linked List Elements | 1) `ListNode dummyHead = new ListNode(0)`; <br/> `dummyHead.next = head`; <br/> `ListNode prev = dummyHead`, <br/> `curr = head`; <br/> 2) return `dummyHead.next`
+| [203](https://leetcode.com/problems/remove-linked-list-elements/) | Linked List | Remove Linked List Elements | 1) `ListNode dummyHead = new ListNode(0)`; <br/> `dummyHead.next = head`; <br/> `ListNode prev = dummyHead`, <br/> `curr = head`; <br/> 2) return `dummyHead.next` |
+| [83](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | Linked List | Remove Duplicates from Sorted Lists | 1) Use a `curr` pointer to keep track of the value and its next value <br/> 2) `while (curr != null && curr.next != null)` |
 
 # III. Data Structure and Algorithms
 ## 1. Recursion
