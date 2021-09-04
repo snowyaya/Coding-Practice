@@ -62,6 +62,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | [83](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | Linked List | Remove Duplicates from Sorted Lists | 1) Use a `curr` pointer to keep track of the value and its next value <br/> 2) `while (curr != null && curr.next != null)` |
 | [105](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | Binary Tree | Construct Binary Tree from Preorder and Inorder Traversal | | 1) [recursive with picture](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/discuss/683377/Java-with-Picture) |
 | [106](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | Binary Tree | Construct Binary Tree from Inorder and Postorder Traversal |
+| [69](https://leetcode.com/problems/sqrtx/) | Math | Sqrt(x) | 1) `0 < res < x/ 2` |
 
 # III. Data Structure and Algorithms
 ## 1. Recursion
