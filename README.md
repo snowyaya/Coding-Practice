@@ -62,7 +62,15 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | [83](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | Linked List | Remove Duplicates from Sorted Lists | 1) Use a `curr` pointer to keep track of the value and its next value <br/> 2) `while (curr != null && curr.next != null)` |
 | [105](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | Binary Tree | Construct Binary Tree from Preorder and Inorder Traversal | | 1) [recursive with picture](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/discuss/683377/Java-with-Picture) |
 | [106](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | Binary Tree | Construct Binary Tree from Inorder and Postorder Traversal |
-| [69](https://leetcode.com/problems/sqrtx/) | Math | Sqrt(x) | 1) `0 < res < x/ 2` |
+| [69](https://leetcode.com/problems/sqrtx/) | Binary Search | Sqrt(x) | 1) `0 < res < x/ 2` |
+| [317](https://leetcode.com/problems/guess-number-higher-or-lower/) | Binary Search | Guess Number higher or Lower |
+| [33] |(https://leetcode.com/problems/search-in-rotated-sorted-array/) | Binary Search | Search in Rotated Array |
+| [278](https://leetcode.com/problems/first-bad-version/) | Binary Search | First Bad Version |
+| [162](https://leetcode.com/problems/find-peak-element/) | Binary Search | Find Peak Element |
+| [153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Binary Search | Find Minimum in Rotated Array |
+| [34](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | Binary Search | Find First and Last Position of Element in Sorted Array |
+| [658](https://leetcode.com/problems/find-k-closest-elements/) | Binary Search | Find k Closest elements |
+
 
 # III. Data Structure and Algorithms
 ## 1. Recursion
