@@ -64,7 +64,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | [106](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | Binary Tree | Construct Binary Tree from Inorder and Postorder Traversal |
 | [69](https://leetcode.com/problems/sqrtx/) | Binary Search | Sqrt(x) | 1) `0 < res < x/ 2` |
 | [317](https://leetcode.com/problems/guess-number-higher-or-lower/) | Binary Search | Guess Number higher or Lower |
-| [33] |(https://leetcode.com/problems/search-in-rotated-sorted-array/) | Binary Search | Search in Rotated Array |
+| [33](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Binary Search | Search in Rotated Array |
 | [278](https://leetcode.com/problems/first-bad-version/) | Binary Search | First Bad Version |
 | [162](https://leetcode.com/problems/find-peak-element/) | Binary Search | Find Peak Element |
 | [153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Binary Search | Find Minimum in Rotated Array |
