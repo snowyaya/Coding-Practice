@@ -70,6 +70,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | [153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Binary Search | Find Minimum in Rotated Array |
 | [34](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | Binary Search | Find First and Last Position of Element in Sorted Array |
 | [658](https://leetcode.com/problems/find-k-closest-elements/) | Binary Search | Find k Closest elements |
+| [270](https://leetcode.com/problems/closest-binary-search-tree-value/) | Binary Search | Closest Binary Search Tree Value | 
 
 
 # III. Data Structure and Algorithms
