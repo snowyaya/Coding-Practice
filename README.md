@@ -1,5 +1,5 @@
-# I
-## 1. [LeetCode Log](https://github.com/snowyaya/LeetCode-Daily-Practice/blob/master/LeetCode%20Log.md)
+# I Coding & BQ Summary
+## 1. [LeetCode Intermediate Log](https://github.com/snowyaya/LeetCode-Daily-Practice/blob/master/LeetCode%20Log.md)
 ## 2. Mock Interview takeaway 
 | Date |Coding Mock | BQ Mock |
 | --- | --- | --- |
