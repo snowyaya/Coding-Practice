@@ -74,7 +74,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | [367](https://leetcode.com/problems/valid-perfect-square/) | Binary Search | Valid Perfect Square | 1) use `long` type to avoid 2147483647 case | 
 | [702](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/) | Binary Search | Seach in a Sorted Unknown Size Array |
 | [744](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) | Binary Search | Find Smallest Letter Greater Than Target | 1) find the rightmost position to insert target into letters so that it remains sorted. <br/> 2) return `letters[left % letters.length]` |
-| [154](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) | Binary Search | Find Minimum in Roated Array II | 1) When `nums[mid] == nums[right]`, update the `right -= 1`<br/> 2) return `nums[left]` at the end | 1) [watch](youtube.com/watch?v=K0PjrikGKK4&t=236s) at 5:00 <br/> 2) ![img](https://github.com/snowyaya/LeetCode-Daily-Practice/blob/master/images/154.png) |
+| [154](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) | Binary Search | Find Minimum in Roated Array II | 1) When `nums[mid] == nums[right]`, update the `right -= 1`<br/> 2) return `nums[left]` at the end | 1) [watch](youtube.com/watch?v=K0PjrikGKK4&t=236s) at 5:00 <br/> 2) ![img](https://github.com/snowyaya/LeetCode-Daily-Practice/blob/master/images/154.png) | 9/16/21 |
 
 
 # III. Data Structure and Algorithms
