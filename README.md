@@ -1,6 +1,6 @@
 # I Coding & BQ Summary
-## 1. [LeetCode Intermediate Log](https://github.com/snowyaya/LeetCode-Daily-Practice/blob/master/LeetCode%20Log.md)
-## 2. Mock Interview takeaway 
+## 1. [LeetCode Log](https://github.com/snowyaya/LeetCode-Daily-Practice/blob/master/LeetCode%20Log.md)
+## 2. Mock Interview takeaways 
 | Date |Coding Mock | BQ Mock |
 | --- | --- | --- |
 | 9/15/21 | 🔴 need to review `trie' and `priority queue' |
