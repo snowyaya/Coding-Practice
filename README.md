@@ -3,7 +3,7 @@
 ## 2. Mock Interview takeaways 
 | Date |Coding Mock | BQ Mock |
 | --- | --- | --- |
-| 9/15/21 | 🔴 need to review `trie' and `priority queue' |
+| 9/15/21 | 🔴 need to review `trie' and `priority queue` |
 | 9/15/21 | In BST, using `binary search` to traverse the tree takes `O(h) = O(logn)` runtime, worst case is `O(n)` | 
 | 9/16/21 | |
 
