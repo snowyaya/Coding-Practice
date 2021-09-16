@@ -1,4 +1,12 @@
-# I. [LeetCode Log](https://github.com/snowyaya/LeetCode-Daily-Practice/blob/master/LeetCode%20Log.md)
+# I
+## 1. [LeetCode Log](https://github.com/snowyaya/LeetCode-Daily-Practice/blob/master/LeetCode%20Log.md)
+## 2. Mock Interview takeaway 
+| Date |Coding Mock | BQ Mock |
+| --- | --- | --- |
+| 9/15/21 | 🔴 need to review `trie' and `priority queue' |
+| 9/15/21 | In BST, using `binary search` to traverse the tree takes `O(h) = O(logn)` runtime, worst case is `O(n)` | 
+| 9/16/21 | |
+
 # II. LeetCode-Practice-Explanation
 This table is the record of the LeetCode problems I have solved and the link to my video explanation is also attached.
 | Problem |Type | Video | What did you miss? why? | Useful resources | Revisit |
