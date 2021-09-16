@@ -70,9 +70,9 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | [153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Binary Search | Find Minimum in Rotated Array |
 | [34](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | Binary Search | Find First and Last Position of Element in Sorted Array |
 | [658](https://leetcode.com/problems/find-k-closest-elements/) | Binary Search | Find k Closest elements |
-| [270](https://leetcode.com/problems/closest-binary-search-tree-value/) | Binary Search | Closest Binary Search Tree Value | 
-| [367](https://leetcode.com/problems/valid-perfect-square/) | Binary Search | Valid Perfect Square | 1) use `long` type to avoid 2147483647 case | 
-| [702](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/) | Binary Search | Seach in a Sorted Unknown Size Array |
+| [270](https://leetcode.com/problems/closest-binary-search-tree-value/) | Binary Search | Closest Binary Search Tree Value | | | :yellow_circle:9/15/21 |
+| [367](https://leetcode.com/problems/valid-perfect-square/) | Binary Search | Valid Perfect Square | 1) use `long` type to avoid 2147483647 case | | :yellow_circle:9/15/21 |
+| [702](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/) | Binary Search | Seach in a Sorted Unknown Size Array | | | :green_circle:9/15/21 |
 | [744](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) | Binary Search | Find Smallest Letter Greater Than Target | 1) find the rightmost position to insert target into letters so that it remains sorted. <br/> 2) return `letters[left % letters.length]` |  | :red_circle:9/16/21 |
 | [154](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) | Binary Search | Find Minimum in Roated Array II | 1) When `nums[mid] == nums[right]`, update the `right -= 1`<br/> 2) return `nums[left]` at the end | 1) [watch](youtube.com/watch?v=K0PjrikGKK4&t=236s) at 5:00 <br/> 2) ![img](https://github.com/snowyaya/LeetCode-Daily-Practice/blob/master/images/154.png) | :red_circle:9/16/21 |
 | [349](https://leetcode.com/problems/intersection-of-two-arrays/) | Binary Search | Intersection of Two Arrays | 1) intersection is unique | 1) ![img](https://github.com/snowyaya/LeetCode-Daily-Practice/blob/master/images/349.png) | :red_circle:9/16/21|
