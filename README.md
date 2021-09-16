@@ -72,6 +72,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | [658](https://leetcode.com/problems/find-k-closest-elements/) | Binary Search | Find k Closest elements |
 | [270](https://leetcode.com/problems/closest-binary-search-tree-value/) | Binary Search | Closest Binary Search Tree Value | 
 | [367](https://leetcode.com/problems/valid-perfect-square/) | Binary Search | Valid Perfect Square | 1) use `long` type to avoid 2147483647 case | 
+| [702](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/) | Binary Search | Seach in a Sorted Unknown Size Array |
 
 
 # III. Data Structure and Algorithms
