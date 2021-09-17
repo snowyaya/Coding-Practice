@@ -13,7 +13,7 @@ Results: share what outcomes your actions achieved <br/>
 🟢 mocked and scripts is polished <br/>
 
 | Date | Mocked or Not | Question | What need to be improved | Polished Scripts |
-| --- | --- | ---| --- | --- | --- |
+| --- | --- | ---| --- | --- |
 | 9/16/21 | 🟡 | What is the project that you are most proud of? | TBD |
 | 9/16/21 | 🟡 | Why do you want to switch to SWE? Tell me about yourself. | TBD |
 | 9/16/21 | 🟡 | What do you want to get out of the internship? | TBD |
