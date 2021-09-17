@@ -1,1 +1,1 @@
-This folder stors how I prepared for behaviroal questions.
+This folder recordes how I prepared for behaviroal questions.
