@@ -12,10 +12,10 @@ Results: share what outcomes your actions achieved <br/>
 🟡 mocked, but need improving scripts <br/>
 🟢 mocked and scripts is polished <br/>
 
-| Date | Mocked or Not | Question | What need to be improved | Polished Scripts | Main points |
+| Date | Mocked or Not | Question | What need to be improved | Polished Scripts |
 | --- | --- | ---| --- | --- | --- |
-| 9/16/21 | 🟡 | What is the project that you are most proud of? | TBD | TBD |
-| 9/16/21 | 🟡 | Why do you want to switch to SWE? Tell me about yourself. | TBD | TBD |
-| 9/16/21 | 🟡 | What do you want to get out of the internship? | TBD | TBD |
-| 9/16/21 | 🔴 | Tell me about a project that took longer than expected | TBD | TBD |
+| 9/16/21 | 🟡 | What is the project that you are most proud of? | TBD |
+| 9/16/21 | 🟡 | Why do you want to switch to SWE? Tell me about yourself. | TBD |
+| 9/16/21 | 🟡 | What do you want to get out of the internship? | TBD |
+| 9/16/21 | 🔴 | Tell me about a project that took longer than expected | TBD |
 
