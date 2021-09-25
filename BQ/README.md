@@ -20,11 +20,12 @@ Results: share what outcomes your actions achieved <br/>
 | 9/16/21 | 🔴 | Tell me about a project that took longer than expected | TBD |
 | | 🔴 | At what time you faced a problem that had multiple possible solutions? |
 | | 🔴 | |
+| | 🟡 | What do you see yourself in 5 years? |
 | | 🔴 | When did you take a risk, make a mistake or fail? How did you respond? |
 | | 🔴 | What did you do when you needed to motivate a group of individuals? |
 | | 🔴 | How have you legeraged date to develop a strategy? |
 | | 🔴 | A time when a team member didn't meet your expectations on a project? |
-| | 🔴 | Tell me about a time you failed and what you learned from it. |
+| | 🟡 | Tell me about a time you failed and what you learned from it. |
 | | 🔴 | The last time you had to apoligize to someone. |
 | | 🔴 | How dod you show your customer obsession? |
 | | 🔴 | How do you wow your customers? |
@@ -37,12 +38,12 @@ Results: share what outcomes your actions achieved <br/>
 | | 🔴 | Provide an example of when you personally demonstrate owenership. |
 | | 🔴 | Tell me about a time you went above and beyond. |
 | | 🔴 | When you took on something outside your area of responsibility. Outcome. |
-| | 🔴 | An example when you saw a peer struggling and decided to step in and help. |
+| | 🟡 | An example when you saw a peer struggling and decided to step in and help. |
 | | 🔴 | Describe a situation where you disagreed with a supervisor. |
 | | 🔴 | Tell me about a time you recovered from a difficult situation. |
 | | 🔴 | Tell me a situation where you solved a difficult problem. |
 | | 🔴 | Describe a project or idea (not necessarily your own) that was implemented primarily becaused of your efforts. |
-| | 🔴 | Do you feel you work well udner pressure? If so, describe a time when you have done so. |
+| | 🟡 | Do you feel you work well udner pressure? If so, describe a time when you have done so. |
 | | 🔴 | Give me an example of a time where you motivated others. |
 | | 🔴 | Tell a time where you had to delegate tasks during a project. |
 | | 🔴 | Tell me about your proudest professional accomplishment. |
@@ -50,7 +51,7 @@ Results: share what outcomes your actions achieved <br/>
 | | 🔴 | Tell me a time when you missed an obvious solution to a problem. |
 | | 🔴 | Tell me a time you handled a crisis. |
 | | 🔴 | Tell me about a time you had to deal with ambiguity. |
-| | 🔴 | Are you easy to get along with? |
+| | 🟡 | Are you easy to get along with? |
 | | 🔴 | Do you collaborate well? |
 | | 🔴 | Tell me about a team project you worked on. |
 | | 🔴 | Describe a time when you had to bring two departments together to work more efficiently with each other. |
