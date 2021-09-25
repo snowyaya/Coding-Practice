@@ -1,8 +1,8 @@
 # I Coding & BQ Summary
 ## 1. [LeetCode Log](https://github.com/snowyaya/LeetCode-Daily-Practice/blob/master/LeetCode%20Log.md) <br/> [BQ Log](https://github.com/snowyaya/SWE-Interview-Prep/tree/master/BQ)
-## 2. Mock Interview takeaways 
-| Date |Coding Mock | BQ Mock |
-| --- | --- | --- |
+## 2. Coding Mocks
+| Date |Coding Mock |
+| --- | --- |
 | 9/15/21 | 🔴 need to review `trie' and `priority queue` |
 | 9/15/21 | In BST, using `binary search` to traverse the tree takes `O(h) = O(logn)` runtime, worst case is `O(n)` | 
 | 9/16/21 | |
