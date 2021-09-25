@@ -88,7 +88,7 @@ This table is the record of the LeetCode problems I have solved and the link to 
 | [154](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) | Binary Search | Find Minimum in Roated Array II | 1) When `nums[mid] == nums[right]`, update the `right -= 1`<br/> 2) return `nums[left]` at the end | 1) [watch](youtube.com/watch?v=K0PjrikGKK4&t=236s) at 5:00 <br/> 2) ![img](https://github.com/snowyaya/LeetCode-Daily-Practice/blob/master/images/154.png) | :red_circle:9/16/21 |
 | [349](https://leetcode.com/problems/intersection-of-two-arrays/) | Binary Search | Intersection of Two Arrays | 1) intersection is unique | 1) ![img](https://github.com/snowyaya/LeetCode-Daily-Practice/blob/master/images/349.png) | :red_circle:9/16/21|
 | [350](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | Binary Search | Intersection of Two Arrays II | 1) use `hashmap` to the short array integers <br/> 2) decrement `k` if `num : nums2` in the map <br/> 3) intersection is unique | 1)![img](https://github.com/snowyaya/LeetCode-Daily-Practice/blob/master/images/350.png) | :red_circle:9/16/21 |
-| [455](https://leetcode.com/problems/assign-cookies/) | Greedy | Assign Cookies | 1) `sort` both children greedy factors and cookies | | 🟢 |
+| [455](https://leetcode.com/problems/assign-cookies/) | Greedy | Assign Cookies | 1) `sort` both children greedy factors and cookies | | 🟢 9/25/21 |
 
 
 # III. Data Structure and Algorithms
