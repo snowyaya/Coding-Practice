@@ -22,7 +22,7 @@ Credit to [胖头龙的刷题笔记](https://www.1point3acres.com/bbs/thread-678
 | 讲解 | 1) Teach on whiteboard |
 | 模拟 | 1) New problem <br/> 2) ~30 min/each|
 
-### 1st step: 初刷 🟣 + 🔵 
+### 1st step: 初刷 🟣 + 🔵 [NOW]
 
 ### 2nd step: 精刷 🟣
 
