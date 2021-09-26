@@ -112,6 +112,7 @@ Credit to [胖头龙的刷题笔记](https://www.1point3acres.com/bbs/thread-678
 # III. BFS
 ## 1. Binary Tree
 - [x] 🟣 297. [Serialize and Deserialize Binary Tree](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BBFS%5D%20297.%20Serialize%20and%20Deserialize%20Binary%20Tree.java)
+---
 * 🔴
 * `serialize(TreeNode root)`
 > use level order
@@ -123,7 +124,7 @@ q.append(curr.left)
 ```
 > recursion
 `return root.val + "," + serialize(root.left) + "," + serialize(root.right)`
-
+---
 * `deserialize(String data)`
 > use level order
 ```java
@@ -158,8 +159,10 @@ String helperD(q) {
   return root
 }
 ```
+---
 
 - [x] 🔵 102. [Binary Tree Level Order Traversal](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BBinary%20Tree%5D%20102%20Level%20Order%20Binary%20Tree%20Traversal.java)
+---
 * 🔴
 * return `[[],[],[],...]`
 * use `queue` to store the level list
@@ -182,6 +185,7 @@ while (!q.isEmpty()) {
   output.add(list)
 }
 ```
+---
 
 - [x] 🔵 103. [Binary Tree Zigzag Level Order Traversal](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BBFS%5D%20103.%20Binary%20Tree%20Zigzag%20Level%20Order%20Traversal.java)
 ---
