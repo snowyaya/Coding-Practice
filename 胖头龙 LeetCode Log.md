@@ -113,9 +113,9 @@ Credit to [胖头龙的刷题笔记](https://www.1point3acres.com/bbs/thread-678
 ## 1. Binary Tree
 - [ ] 🟣 297. Serialize and Deserialize Binary Tree
 - [x] 🔵 102. Binary Tree Level Order Traversal 
-* 🔴
+> * 🔴
 * return `[[],[],[],...]`
-* use `queue` to store the level list
+> * use `queue` to store the level list
 * use `list` to store the level values
 ```java
 q.add(root)
