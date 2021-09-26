@@ -115,11 +115,11 @@ Credit to [胖头龙的刷题笔记](https://www.1point3acres.com/bbs/thread-678
 * 🔴
 * `serialize(TreeNode root)`
 > use level order
+use `Queue` to traverse by level
 ```java
 StringBuilder str = new StringBuilder()
 str.append("x,") 
 q.append(curr.left)
-use `Queue` to traverse by level
 ```
 > recursion
 `return root.val + "," + serialize(root.left) + "," + serialize(root.right)`
