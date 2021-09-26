@@ -202,8 +202,10 @@ if (!levelList.isEmpty()) {
 ---
 
 - [x] 🔵 107. Binary Tree Level Order Traversal II
+---
 * 🟤
 * use `Collections.reverse()` at the end
+---
 
 - [ ] 🔵 513. Find Bottom Left Tree Value
 
