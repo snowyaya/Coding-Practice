@@ -4,7 +4,7 @@
 [101 LeetCode Log](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/101%20LeetCode%20Log.md) <br/> 
 [BQ Log](https://github.com/snowyaya/SWE-Interview-Prep/tree/master/BQ)
 ## 2. Coding Mocks
-| Date |Coding Mock |
+| Date | Coding Mock |
 | --- | --- |
 | 9/15/21 | 🔴 need to review `trie` and `priority queue` |
 | 9/15/21 | In BST, using `binary search` to traverse the tree takes `O(h) = O(logn)` runtime, worst case is `O(n)` | 
