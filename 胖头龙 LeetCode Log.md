@@ -112,7 +112,8 @@ Credit to [胖头龙的刷题笔记](https://www.1point3acres.com/bbs/thread-678
 # III. BFS
 ## 1. Binary Tree
 - [ ] 🟣 297. Serialize and Deserialize Binary Tree
-- [ ] 🔵 102. Binary Tree Level Order Traversal 🔴
+- [ ] 🔵 102. Binary Tree Level Order Traversal 
+* 🔴
 * return `[[],[],[],...]`
 * use `queue` to store the level list
 * use `list` to store the level values
@@ -122,14 +123,16 @@ while (!q.isEmpty()) {
   new list;
   level = q.size()
   for (i < level.size()) {
-  root = q.remove()
-  list.add(root) // root added
-  if leftchild {
-    q.add(leftchild) // leftchild added
+    root = q.remove()
+    list.add(root) // root added
+    if leftchild {
+      q.add(leftchild) // leftchild added
+    }
+    if rightchild {
+      q.add(rightchild) // rightchild added
+    }
   }
-  if rightchild {
-    q.add(rightchild) // rightchild added
-  }
+  output.add(list)
 }
 ```
     
