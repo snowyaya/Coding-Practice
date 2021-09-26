@@ -201,7 +201,10 @@ if (!levelList.isEmpty()) {
 ```
 ---
 
-- [ ] 🔵 107. Binary Tree Level Order Traversal II
+- [x] 🔵 107. Binary Tree Level Order Traversal II
+* 🟤
+* use `Collections.reverse()` at the end
+
 - [ ] 🔵 513. Find Bottom Left Tree Value
 
 ## 2. Topological Sort
