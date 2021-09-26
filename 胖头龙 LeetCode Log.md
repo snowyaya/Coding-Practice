@@ -111,7 +111,54 @@ Credit to [胖头龙的刷题笔记](https://www.1point3acres.com/bbs/thread-678
 
 # III. BFS
 ## 1. Binary Tree
-- [ ] 🟣 297. Serialize and Deserialize Binary Tree
+- [x] 🟣 297. [Serialize and Deserialize Binary Tree](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BBFS%5D%20297.%20Serialize%20and%20Deserialize%20Binary%20Tree.java)
+* 🔴
+* `serialize(TreeNode root)`
+> use level order
+```java
+StringBuilder str = new StringBuilder()
+str.append("x,") 
+q.append(curr.left)
+use `Queue` to traverse by level
+```
+> recursion
+` return root.val + "," + serialize(root.left) + "," + serialize(root.right)
+
+* `deserialize(String data)`
+> use level order
+```java
+String[] values = data.split(",");
+int i = 0;
+TreeNode root = new TreeNode(Integer.valueOf(values[i++]))
+while (!q.isEmpty()) {
+  curr = q.remove()
+  if (!values[i].equals("x")) {
+    update curr.left
+    add curr.left to q
+  }
+  i++
+  if (!values[i].equals("x")) {
+    update curr.right
+    add curr.right to q
+  }
+  i++
+}
+```
+
+> use recursion
+* use a `helperD`
+```java
+Queue<String> q = new LinkedList<>(Arrays.asList(data.split(",")));`
+String helperD(q) {
+  s = q.poll()
+  if (curr == null) return null
+  root = new TreeNode(s)
+  root.left = helperD(q)
+  root.right = helperD(q)
+  return root
+}
+```
+
 - [x] 🔵 102. Binary Tree Level Order Traversal 
 * 🔴
 * return `[[],[],[],...]`
