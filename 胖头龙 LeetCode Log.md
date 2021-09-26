@@ -3,7 +3,40 @@ This document is used to keep track of the solved LeetCode problems. <br/>
 Credit to [胖头龙的刷题笔记](https://www.1point3acres.com/bbs/thread-678970-1-1.html). <br/>
 [Joshua LeetCode Summary](http://joshuablog.herokuapp.com/Leetcode-%E6%80%BB%E7%BB%93.html) <br/>
 
-My solution are [here](https://github.com/snowyaya/LeetCode-Daily-Practice).
+## Strategy
+🟣 Must
+🔵 Core
+🟢 Important
+
+| Strategy | Description |
+| --- | --- |
+| 初刷 | 1) It's okay to 'copy' the solution, but use your own style to write the code <br/> 2) ~30 min/each |
+| 精刷 | 1) Fully understand the solution <br/> 2) Take notes of the algorithms <br/>  3) Mark the problem if cannot fully understand <br/> 4) ~ 60 min/each |
+| 复刷 | 1) Speak your algorithms loud <br/> 2) Refer to the notes and solution <br/> 3) Reflect on where needs improving <br/> 4) ~20 min/each |
+| 回顾 | 1) Review by tags <br/> 2) Go over algorithms in mind <br/> 3) Solidify the memory, DO NOT WRITE CODE <br/> 4) ~5-10 min/each |
+| 讲解 | 1) Teach on whiteboard |
+| 模拟 | 1) New problem <br/> 2) ~30 min/each|
+
+### 1st step: 初刷 🟣 + 🔵 
+
+### 2nd step: 精刷 🟣
+
+### 3rd step: 精刷 🔵
+
+### 4th step: 初刷 🟢
+
+
+### 5th step: 复刷 🟣 + 🔵 
+
+
+### 6th step: 精刷 🟢 + 回顾 (🟣 + 🔵)
+
+### 7th step: 复刷 (🟣 + 🔵) + 回顾 🟢
+
+### 8th step: 复刷 🟢 + 回顾 ALL
+
+### 9th step:  回顾 ALL + MOCK
+
 
 # I. Binary Search
 ## 1. 朴素二分法
@@ -12,10 +45,19 @@ My solution are [here](https://github.com/snowyaya/LeetCode-Daily-Practice).
 
 # II. Pointers
 ## 1. Array
-- [ ] **** 912 Sort An Array (quick sort and merge sort)
-- [ ] **** 75 Sort Colors
-- [ ] *** 26 Remove Duplicates from Sorted Array
-- [ ] *** 80 Remove Duplicateds from Sorted Array II
+- [ ] 🟣 912. Sort An Array (quick sort and merge sort)
+- [ ] 🟣 75. Sort Colors
+- [ ] 🔵 26. Remove Duplicates from Sorted Array
+- [ ] 🔵 80. Remove Duplicateds from Sorted Array II
+- [ ] 🔵 88. Merge Sorted Array
+- [ ] 🔵 283. Move Zeroes
+- [ ] 🔵 215. Kth Largest Element in an Array
+- [ ] 🔵 347. Top K Frequent Elements
+- [ ] 🔵 349. Intersections of Two Arrays
+- [ ] 🔵 350. Intersections of Two Arrays II
+- [ ] 🔵 845. Longest Mountain in Array
+- [ ] 🔵 42. Trapping Rain Water
+- [ ] 🔵 43. Multiply Strings
 
 ## 2. Linked List
 
