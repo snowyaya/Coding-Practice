@@ -106,16 +106,35 @@ Credit to [胖头龙的刷题笔记](https://www.1point3acres.com/bbs/thread-678
 
 # III. BFS
 ## 1. Binary Tree
+- [ ] 🟣 297. Serialize and Deserialize Binary Tree
+- [ ] 🔵 102. Binary Tree Level Order Traversal
+- [ ] 🔵 103. Binary Tree Zigzag Level Order Traversal
+- [ ] 🔵 107. Binary Tree Level Order Traversal II
+- [ ] 🔵 513. Find Bottom Left Tree Value
 
 ## 2. Topological Sort
+- [ ] 🔵 207. Course Schedule
+- [ ] 🔵 210. Course Schedule II
+- [ ] 🔵 269. Alien Dictionary
 
 ## 3. Matrix
+- [ ] 🟣 200. Number of Islands
+- [ ] 🔵 490. The Maze
+- [ ] 🔵 505. The Maze II
+- [ ] 🔵 542. 01 Matrix
+- [ ] 🔵 733. Flood Fill
+- [ ] 🔵 994. Rotting Oranges
+- [ ] 🔵 305. Number of Islands II
 
 ## 4. Graph
+- [ ] 🟣 133. Clone Graph
+- [ ] 🔵 127. Word Ladder
+- [ ] 🔵 261. Graph Valid Tree
+- [ ] 🔵 841. Keys an Rooms
 
 # IV. Binary Tree and Recursion
-## 1. Traversal
-- [ ] 🟣 94. Binary Tree Inorder Traversal
+## 1. Traversal (Also need to be skilled with iteration)
+- [x] 🟣 94. Binary Tree Inorder Traversal
 - [ ] 🟣 144. Binary Tree Preorder Traversal
 - [ ] 🟣 145. Binary Tree Postorder Traversal
 - [ ] 🟣 105. Construct Binary Tree from Preorder and Inorder Traversal
