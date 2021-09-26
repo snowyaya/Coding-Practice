@@ -64,11 +64,11 @@ Credit to [胖头龙的刷题笔记](https://www.1point3acres.com/bbs/thread-678
 ## 3. Sliding Window
 
 ## 4. Interval
-- [x] *** 56 Merge Intervals
-- [ ] *** 57 Insert Interval
-- [ ] *** 252 meeting Rooms
-- [ ] *** 253 Meeting Rooms II
-- [ ] *** 986 Interval List Intersections
+- [x] 🔵 56 Merge Intervals
+- [ ] 🔵 57 Insert Interval
+- [ ] 🔵 252 meeting Rooms
+- [ ] 🔵 253 Meeting Rooms II
+- [ ] 🔵 986 Interval List Intersections
 
 ## 5. String
 
@@ -89,50 +89,50 @@ Credit to [胖头龙的刷题笔记](https://www.1point3acres.com/bbs/thread-678
 
 # IV. Binary Tree and Recursion
 ## 1. Traversal
-- [ ] **** 94 Binary Tree Inorder Traversal
-- [ ] **** 144 Binary Tree Preorder Traversal
-- [ ] **** 145 Binary Tree Postorder Traversal
-- [ ] **** 105 Construct Binary Tree from Preorder and Inorder Traversal
-- [ ] *** 106 Construct Binary Tree from Inorder and Postorder Traversal
-- [ ] *** 889 Construct Binary Tree from Preorder and Postorder Traversal
+- [ ] 🟣 94 Binary Tree Inorder Traversal
+- [ ] 🟣 144 Binary Tree Preorder Traversal
+- [ ] 🟣 145 Binary Tree Postorder Traversal
+- [ ] 🟣 105 Construct Binary Tree from Preorder and Inorder Traversal
+- [ ] 🔵 106 Construct Binary Tree from Inorder and Postorder Traversal
+- [ ] 🔵 889 Construct Binary Tree from Preorder and Postorder Traversal
 
 ## 2. Iterator
-- [ ] **** 173 Binary Search Tree Iterator
-- [ ] *** 230 Kth Smallest Element in a BST
-- [ ] *** 285 Inorder Successor in BST
-- [ ] ** 270 Closest Binary Search Tree Value
-- [ ] ** 272 Closest Binary Search Tree Value II
-- [ ] ** 510 Inorder Successor in BST II
+- [ ] 🟣 173 Binary Search Tree Iterator
+- [ ] 🔵 230 Kth Smallest Element in a BST
+- [ ] 🔵 285 Inorder Successor in BST
+- [ ] 🟢 270 Closest Binary Search Tree Value
+- [ ] 🟢 272 Closest Binary Search Tree Value II
+- [ ] 🟢 510 Inorder Successor in BST II
 
 ## 3. Subtree
-- [ ] *** 111 Minimum Depth of Binary Tree
-- [ ] ** 104 Maximum Depth of Binary Tree
-- [ ] ** 333 Largest BST Subtree
+- [ ] 🔵 111 Minimum Depth of Binary Tree
+- [ ] 🟢 104 Maximum Depth of Binary Tree
+- [ ] 🟢 333 Largest BST Subtree
 
 ## 4. LCA
-- [x] *** 236 Lowest Common Ancestor of a Binary Tree
-- [ ] ** 235 Lowest Common Ancestor of a Binary Search Tree
-- [ ] *** 1650 Lowest Common Ancestor of a Binary Tree III
+- [x] 🔵 236 Lowest Common Ancestor of a Binary Tree
+- [ ] 🟢 235 Lowest Common Ancestor of a Binary Search Tree
+- [ ] 🔵 1650 Lowest Common Ancestor of a Binary Tree III
 
 ## 5. Tree Type
-- [ ] *** 98 Validate Binary Search Tree
-- [ ] *** 100 Same Tree
-- [ ] *** 101 Symmetric Tree
-- [ ] *** 110 Balanced Binary Tree
+- [ ] 🔵 98 Validate Binary Search Tree
+- [ ] 🔵 100 Same Tree
+- [ ] 🔵 101 Symmetric Tree
+- [ ] 🔵 110 Balanced Binary Tree
 
 ## 6. Path
 - [ ] *** 112 Path Sum
 - [ ] *** 113 Path Sum II
 - [ ] *** 124 Binary Tree Maximum Path Sum
-- [ ] ** 298 Binary Tree Longest Consecutive Sequence
-- [ ] ** 549 Binary Tree Longest Consecutive Sequence II
+- [ ] 🟢 298 Binary Tree Longest Consecutive Sequence
+- [ ] 🟢 549 Binary Tree Longest Consecutive Sequence II
 
 ## 7. Others
-- [ ] *** 199 Binary Tree Right Side View
-- [ ] *** 513 Find Bottom Left Tree Value
-- [ ] *** 331 Verify Preorder Serialization of a Binary Tree
-- [ ] *** 449 Serialize and Deserialize BST
-- [ ] ** 114 Flatten Binary Tree to Linked List
+- [ ] 🔵 199 Binary Tree Right Side View
+- [ ] 🔵 513 Find Bottom Left Tree Value
+- [ ] 🔵 331 Verify Preorder Serialization of a Binary Tree
+- [ ] 🔵 449 Serialize and Deserialize BST
+- [ ] 🟢 114 Flatten Binary Tree to Linked List
 
 # V. DFS
 ## 1. Combinations/Permutations
