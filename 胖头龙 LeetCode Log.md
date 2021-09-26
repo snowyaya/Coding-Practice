@@ -45,41 +45,53 @@ Credit to [胖头龙的刷题笔记](https://www.1point3acres.com/bbs/thread-678
 
 # II. Pointers
 ## 1. Array
-- [ ] 🟣 912. Sort An Array (quick sort and merge sort)
-- [ ] 🟣 75. Sort Colors
-- [ ] 🔵 26. Remove Duplicates from Sorted Array
-- [ ] 🔵 80. Remove Duplicateds from Sorted Array II
-- [ ] 🔵 88. Merge Sorted Array
-- [ ] 🔵 283. Move Zeroes
-- [ ] 🔵 215. Kth Largest Element in an Array
-- [ ] 🔵 347. Top K Frequent Elements
-- [ ] 🔵 349. Intersections of Two Arrays
-- [ ] 🔵 350. Intersections of Two Arrays II
-- [ ] 🔵 845. Longest Mountain in Array
-- [ ] 🔵 42. Trapping Rain Water
-- [ ] 🔵 43. Multiply Strings
+- [x] 🟣 912. Sort An Array (quick sort and merge sort)
+- [x] 🟣 75. Sort Colors
+- [x] 🔵 26. Remove Duplicates from Sorted Array
+- [x] 🔵 80. Remove Duplicateds from Sorted Array II
+- [x] 🔵 88. Merge Sorted Array
+- [x] 🔵 283. Move Zeroes
+- [x] 🔵 215. Kth Largest Element in an Array
+- [x] 🔵 347. Top K Frequent Elements
+- [x] 🔵 349. Intersections of Two Arrays
+- [x] 🔵 350. Intersections of Two Arrays II
+- [x] 🔵 845. Longest Mountain in Array
+- [x] 🔵 42. Trapping Rain Water
+- [x] 🔵 43. Multiply Strings
 
 ## 2. Linked List
+- [x] 🟣 21. Merge Two Sorted Lists
+- [x] 🔵 86. Partition List
+- [x] 🔵 141. Linked List Cycle
+- [x] 🔵 160. Intersection of Two Linked List
+- [x] 🔵 234. Palindrome Linked List
+- [x] 🔵 328. Odd Even Linked List
 
 ## 3. Sliding Window
+- [ ] 🟣 3. Longest Substring without Repeating Characters
+- [ ] 🔵 11. Container With Most Water
+- [ ] 🔵 76. Minimum Window Substring
+- [x] 🔵 209. Monimum Size Subarray Sum
+- [x] 🔵 239. Sliding Window Maximum
+- [x] 🔵 713. Subarray Product Less Than K
 
 ## 4. Interval
 - [x] 🔵 56. Merge Intervals
 - [ ] 🔵 57. Insert Interval
 - [ ] 🔵 252. meeting Rooms
 - [ ] 🔵 253. Meeting Rooms II
-- [ ] 🔵 986. Interval List Intersections
+- [x] 🔵 986. Interval List Intersections
 
 ## 5. String
-- [ ] 🔵 5. Longest Palindromic Substring
-- [ ] 🔵 345. Reverse Vowels of a String
-- [ ] 🔵 680. Valid Palindrome II
+- [x] 🔵 5. Longest Palindromic Substring
+- [x] 🔵 345. Reverse Vowels of a String
+- [x] 🔵 680. Valid Palindrome II
 
 ## 6. Stream
-- [ ] 🔵 295. Find Mediam from Data Stream
+- [x] 🔵 295. Find Mediam from Data Stream
 
 ## 7. Subarray
-- [ ] 🟣 53. Maximum Subarray
+- [x] 🟣 53. Maximum Subarray
 - [ ] 🔵 238. Product of Array Except Self
 - [ ] 🔵 303. Range Sum Query - Immutable
 - [ ] 🔵 325. Maximum Size Subarray Sum equals K
