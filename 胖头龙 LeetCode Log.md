@@ -110,7 +110,6 @@
 
 # III. BFS
 ## 1. Binary Tree
----
 - [x] 🟣 297. [Serialize and Deserialize Binary Tree](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BBFS%5D%20297.%20Serialize%20and%20Deserialize%20Binary%20Tree.java)
 * 🔴
 * `serialize(TreeNode root)`
@@ -212,7 +211,6 @@ if (!levelList.isEmpty()) {
 ---
 
 ## 2. Topological Sort
----
 - [ ] 🟣 Lint-127. Topological Sorting
 * 🔴🔴🔴
 * [DFS video](https://www.youtube.com/watch?v=ddTC4Zovtbc)
