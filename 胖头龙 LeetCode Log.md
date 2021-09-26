@@ -7,6 +7,10 @@ Credit to [胖头龙的刷题笔记](https://www.1point3acres.com/bbs/thread-678
 🟣 Must
 🔵 Core
 🟢 Important
+<br/>
+🔴 Not mastered
+🟡 Sort of mastered
+🟤 mastered
 
 | Strategy | Description |
 | --- | --- |
