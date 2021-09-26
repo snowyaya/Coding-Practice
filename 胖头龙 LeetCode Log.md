@@ -122,7 +122,7 @@ q.append(curr.left)
 use `Queue` to traverse by level
 ```
 > recursion
-` return root.val + "," + serialize(root.left) + "," + serialize(root.right)
+`return root.val + "," + serialize(root.left) + "," + serialize(root.right)`
 
 * `deserialize(String data)`
 > use level order
