@@ -187,7 +187,6 @@ while (!q.isEmpty()) {
 ---
 
 - [x] 🔵 103. [Binary Tree Zigzag Level Order Traversal](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BBFS%5D%20103.%20Binary%20Tree%20Zigzag%20Level%20Order%20Traversal.java)
----
 * 🔴
 * use `Collections.reverse()` to get the odd level nodes
 ```java
