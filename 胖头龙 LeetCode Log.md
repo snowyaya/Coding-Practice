@@ -205,7 +205,12 @@ if (!levelList.isEmpty()) {
 * can also use `output.add(0, levelList)` after each level for loop
 ---
 
-- [ ] 🔵 513. Find Bottom Left Tree Value
+- [x] 🔵 513. Find Bottom Left Tree Value
+* 🟤
+* Be careful with when to return the bottom leftmost value
+* `if (q.isEmpty()) return levelList.get(0)`
+
+---
 
 ## 2. Topological Sort
 - [x] 🔵 207. Course Schedule
