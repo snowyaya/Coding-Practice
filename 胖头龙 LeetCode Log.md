@@ -202,6 +202,7 @@ if (!levelList.isEmpty()) {
 - [x] 🔵 107. Binary Tree Level Order Traversal II
 * 🟤
 * use `Collections.reverse()` at the end
+* can also use `output.add(0, levelList)` after each level for loop
 ---
 
 - [ ] 🔵 513. Find Bottom Left Tree Value
