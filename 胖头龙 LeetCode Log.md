@@ -212,6 +212,13 @@ if (!levelList.isEmpty()) {
 ---
 
 ## 2. Topological Sort
+---
+- [ ] 🟣 Lint-127. Topological Sorting
+* 🔴🔴🔴
+* [DFS video](https://www.youtube.com/watch?v=ddTC4Zovtbc)
+* BFS using `HashMap indegree`
+* **DFS???**
+---
 - [x] 🔵 207. Course Schedule
 - [ ] 🔵 210. Course Schedule II
 - [ ] 🔵 269. Alien Dictionary
