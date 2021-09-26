@@ -7,7 +7,7 @@
 - [ ] 435. [Non-overlapping Intervals (Medium)](https://leetcode.com/problems/non-overlapping-intervals/)
 
 ## 1.3 Practice
-- [ ] 605. Can Place Flowers
+- [ ] 605. [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)
 - [ ] 452. Minimum Number of Arrows to Burst Balloons
 - [ ] 763. Partition Labels
 - [ ] 122. Best Time to Buy and Sell Stock II
