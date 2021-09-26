@@ -104,8 +104,8 @@ Credit to [胖头龙的刷题笔记](https://www.1point3acres.com/bbs/thread-678
 - [ ] 🔵 560. Subarray Sum Equals K
 
 ## 8. Sum and Difference
-- [ ] 🟣 1. Two Sum
-- [ ] 🔵 15. 3Sum
+- [x] 🟣 1. Two Sum
+- [x] 🔵 15. 3Sum
 - [ ] 🔵 18. 4Sum
 
 
@@ -118,12 +118,12 @@ Credit to [胖头龙的刷题笔记](https://www.1point3acres.com/bbs/thread-678
 - [ ] 🔵 513. Find Bottom Left Tree Value
 
 ## 2. Topological Sort
-- [ ] 🔵 207. Course Schedule
+- [x] 🔵 207. Course Schedule
 - [ ] 🔵 210. Course Schedule II
 - [ ] 🔵 269. Alien Dictionary
 
 ## 3. Matrix
-- [ ] 🟣 200. Number of Islands
+- [x] 🟣 200. Number of Islands
 - [ ] 🔵 490. The Maze
 - [ ] 🔵 505. The Maze II
 - [ ] 🔵 542. 01 Matrix
@@ -140,8 +140,8 @@ Credit to [胖头龙的刷题笔记](https://www.1point3acres.com/bbs/thread-678
 # IV. Binary Tree and Recursion
 ## 1. Traversal (Also need to be skilled with iteration)
 - [x] 🟣 94. Binary Tree Inorder Traversal
-- [ ] 🟣 144. Binary Tree Preorder Traversal
-- [ ] 🟣 145. Binary Tree Postorder Traversal
+- [x] 🟣 144. Binary Tree Preorder Traversal
+- [x] 🟣 145. Binary Tree Postorder Traversal
 - [ ] 🟣 105. Construct Binary Tree from Preorder and Inorder Traversal
 - [ ] 🔵 106. Construct Binary Tree from Inorder and Postorder Traversal
 - [ ] 🔵 889. Construct Binary Tree from Preorder and Postorder Traversal
@@ -156,19 +156,19 @@ Credit to [胖头龙的刷题笔记](https://www.1point3acres.com/bbs/thread-678
 
 ## 3. Subtree
 - [ ] 🔵 111. Minimum Depth of Binary Tree
-- [ ] 🟢 104. Maximum Depth of Binary Tree
+- [x] 🟢 104. Maximum Depth of Binary Tree
 - [ ] 🟢 333. Largest BST Subtree
 
 ## 4. LCA
 - [x] 🔵 236. Lowest Common Ancestor of a Binary Tree
-- [ ] 🟢 235. Lowest Common Ancestor of a Binary Search Tree
+- [x] 🟢 235. Lowest Common Ancestor of a Binary Search Tree
 - [ ] 🔵 1650. Lowest Common Ancestor of a Binary Tree III
 
 ## 5. Tree Type
-- [ ] 🔵 98. Validate Binary Search Tree
+- [x] 🔵 98. Validate Binary Search Tree
 - [ ] 🔵 100. Same Tree
-- [ ] 🔵 101. Symmetric Tree
-- [ ] 🔵 110. Balanced Binary Tree
+- [x] 🔵 101. Symmetric Tree
+- [x] 🔵 110. Balanced Binary Tree
 
 ## 6. Path
 - [ ] 🔵 112. Path Sum
