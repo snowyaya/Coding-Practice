@@ -1,4 +1,5 @@
-Note: <br/>
+### Focus on growth; Aim Small; Be consistant.
+#### Note
 This document is used to keep track of the solved LeetCode problems. <br/>
 Credit to [胖头龙的刷题笔记](https://www.1point3acres.com/bbs/thread-678970-1-1.html). <br/>
 [Joshua LeetCode Summary](http://joshuablog.herokuapp.com/Leetcode-%E6%80%BB%E7%BB%93.html) <br/>
