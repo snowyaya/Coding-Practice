@@ -1,6 +1,6 @@
 # I Coding & BQ Summary
 ## 1. Practice Log
-[胖头龙 LeetCode Log](https://github.com/snowyaya/LeetCode-Daily-Practice/blob/master/LeetCode%20Log.md) <br/> 
+[胖头龙 LeetCode Log](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/%E8%83%96%E5%A4%B4%E9%BE%99%20LeetCode%20Log.md) <br/> 
 [101 LeetCode Log](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/101LeetCode%20Log.md) <br/> 
 [BQ Log](https://github.com/snowyaya/SWE-Interview-Prep/tree/master/BQ)
 ## 2. Coding Mocks
