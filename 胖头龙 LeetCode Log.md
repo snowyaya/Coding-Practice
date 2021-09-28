@@ -261,13 +261,13 @@ public ArrayList<DirectedGraphNode> topSort(ArrayList<DirectedGraphNode> graph) 
 
 ---
 - [x] 🔵 207. Course Schedule 🔴
-* We will use a hash map to store each course and its prerequisites. 
-* We will use a hashset to store each to-be-visited course, remove it after the course and its prerequisites get fully visited. 
-* To get this done, we will use DFS to fully visit every course.
-* The base case is when the course is already in the to-be-visited set, dfs returns false, because that means there's a loop in the graph and a course cannot be the prerequisite for itself.
-* If a course's prerequisites list is empty, meaning completing this course doesn't require completing
+> We will use a hash map to store each course and its prerequisites. 
+> We will use a hashset to store each to-be-visited course, remove it after the course and its prerequisites get fully visited. 
+> To get this done, we will use DFS to fully visit every course.
+> The base case is when the course is already in the to-be-visited set, dfs returns false, because that means there's a loop in the graph and a course cannot be the prerequisite for itself.
+> If a course's prerequisites list is empty, meaning completing this course doesn't require completing
 any other course, so this course can be completed and dfs should return true.
-* Now we finished visiting the course, remove it from the visit set so we won't have to visit it again.
+* After we finished visiting the course, remove it from the visit set so we won't have to visit it again.
 `visit.remove(course);`
 * Set the course's prerequisite list to an empty list so we won't have to revisit the prerequisites.
 `preMap.replace(course, new ArrayList<>());`
