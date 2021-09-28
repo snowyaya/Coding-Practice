@@ -44,8 +44,31 @@
 
 # I. Binary Search
 ## 1. 朴素二分法
+- [ ] 🟣 704. Binary Search
+- [ ] 🔵 34. Find First and Last Position of Element in Sorted Array
+- [ ] 🔵 702. Search in a Sorted Array of Unknown Size
+- [ ] 🟢 153. Find Minimum in Rotated Sorted Array
+- [ ] 🟢 154. Find Minimum in Rotated Sorted Array II
+- [ ] 🟢 278. First Bad Version
+- [ ] 🟢 658. Find K Closest Elements
+
 ## 2. 答案二分法
+- [ ] 🟣 33. Search in Rotated Sorted Array
+- [ ] 🟣 81. Search in Rotated Sorted Array II
+- [ ] 🔵 4. Median of Two Sorted Arrays
+- [ ] 🔵 74. Search a 2D Matrix
+- [ ] 🔵 162. Find Peak Element
+- [ ] 🟢 302. Smallest Rectangle enclosing Black Pixels
+- [ ] 🟢 852. Peak Index in a Mountain Array
+
 ## 3. 条件二分法
+- [ ] 🔵 875. Koko Eating Bananas
+- [ ] 🔵 1283. Find the Smallest Divisor Given a Threshold
+- [ ] 🟢 69. Sqrt(x)
+- [ ] 🟢 Lint-586. Sqrt(x) II
+- [ ] 🟢 Lint-183. Wood Cut
+- [ ] 🟢 Lint-437.Copy Books
+- [ ] 🟢 Lint-438. Copy Books II
 
 # II. Pointers
 ## 1. Array
