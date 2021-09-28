@@ -110,7 +110,7 @@
 
 # III. BFS
 ## 1. Binary Tree
-- [x] 🟣 297. [Serialize and Deserialize Binary Tree](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BBFS%5D%20297.%20Serialize%20and%20Deserialize%20Binary%20Tree.java) **[:red_circle:]**
+- [x] 🟣 297. [Serialize and Deserialize Binary Tree](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BBFS%5D%20297.%20Serialize%20and%20Deserialize%20Binary%20Tree.java) 🔴
 * `serialize(TreeNode root)`
 > use level order
 use `Queue` to traverse by level
@@ -158,8 +158,7 @@ String helperD(q) {
 ```
 ---
 
-- [x] 🔵 102. [Binary Tree Level Order Traversal](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BBinary%20Tree%5D%20102%20Level%20Order%20Binary%20Tree%20Traversal.java)
-* 🔴
+- [x] 🔵 102. [Binary Tree Level Order Traversal](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BBinary%20Tree%5D%20102%20Level%20Order%20Binary%20Tree%20Traversal.java) 🔴
 * return `[[],[],[],...]`
 * use `queue` to store the level list
 * use `list` to store the level values
@@ -183,8 +182,7 @@ while (!q.isEmpty()) {
 ```
 ---
 
-- [x] 🔵 103. [Binary Tree Zigzag Level Order Traversal](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BBFS%5D%20103.%20Binary%20Tree%20Zigzag%20Level%20Order%20Traversal.java)
-* 🔴
+- [x] 🔵 103. [Binary Tree Zigzag Level Order Traversal](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BBFS%5D%20103.%20Binary%20Tree%20Zigzag%20Level%20Order%20Traversal.java) 🔴
 * use `Collections.reverse()` to get the odd level nodes
 ```java
 if (!levelList.isEmpty()) {
@@ -210,11 +208,36 @@ if (!levelList.isEmpty()) {
 ---
 
 ## 2. Topological Sort
-- [ ] 🟣 Lint-127. Topological Sorting
-* 🔴🔴🔴
-* [DFS video](https://www.youtube.com/watch?v=ddTC4Zovtbc)
-* BFS using `HashMap indegree`
-* **DFS???**
+- [ ] 🟣 Lint-127. [Topological Sorting](https://www.lintcode.com/problem/127/) 🔴
+* BFS???
+```java
+public ArrayList<DirectedGraphNode> topSort(ArrayList<DirectedGraphNode> graph) {
+        ArrayList<DirectedGraphNode> res = new ArrayList();
+        Map<DirectedGraphNode, Integer> indegree = new HashMap();
+        for(DirectedGraphNode node : graph){
+            for(DirectedGraphNode nei : node.neighbors) {
+                indegree.putIfAbsent(node, 0); // note: need to add node itself to start
+                indegree.put(nei, indegree.getOrDefault(nei, 0) + 1);
+            }
+        }
+
+        Queue<DirectedGraphNode> q = new LinkedList();
+        for(DirectedGraphNode key : indegree.keySet()) {
+            if(indegree.get(key) == 0) q.add(key);
+        }
+
+        while(q.size() > 0) {
+            DirectedGraphNode node = q.poll();
+            res.add(node);
+            for(DirectedGraphNode nei : node.neighbors) {
+                indegree.put(nei, indegree.get(nei) - 1);
+                if(indegree.get(nei) == 0) q.add(nei);
+            }
+        }
+        return res;
+    }
+```
+
 ---
 - [x] 🔵 207. Course Schedule
 - [ ] 🔵 210. Course Schedule II
