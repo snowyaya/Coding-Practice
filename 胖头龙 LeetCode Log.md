@@ -271,7 +271,7 @@ any other course, so this course can be completed and dfs should return true.
 `visit.remove(course);`
 * Set the course's prerequisite list to an empty list so we won't have to revisit the prerequisites.
 `preMap.replace(course, new ArrayList<>());`
-        
+---        
 
 - [ ] 🔵 210. Course Schedule II
 - [ ] 🔵 269. Alien Dictionary
