@@ -261,11 +261,11 @@ public ArrayList<DirectedGraphNode> topSort(ArrayList<DirectedGraphNode> graph) 
 
 ---
 - [x] 🔵 207. Course Schedule 🔴
-> We will use a hash map to store each course and its prerequisites. 
-> We will use a hashset to store each to-be-visited course, remove it after the course and its prerequisites get fully visited. 
-> To get this done, we will use DFS to fully visit every course.
-> The base case is when the course is already in the to-be-visited set, dfs returns false, because that means there's a loop in the graph and a course cannot be the prerequisite for itself.
-> If a course's prerequisites list is empty, meaning completing this course doesn't require completing
+* We will use a hash map to store each course and its prerequisites. 
+* We will use a hashset to store each to-be-visited course, remove it after the course and its prerequisites get fully visited. 
+* To get this done, we will use DFS to fully visit every course.
+* The base case is when the course is already in the to-be-visited set, dfs returns false, because that means there's a loop in the graph and a course cannot be the prerequisite for itself.
+* If a course's prerequisites list is empty, meaning completing this course doesn't require completing
 any other course, so this course can be completed and dfs should return true.
 * After we finished visiting the course, remove it from the visit set so we won't have to visit it again.
 `visit.remove(course);`
@@ -273,7 +273,12 @@ any other course, so this course can be completed and dfs should return true.
 `preMap.replace(course, new ArrayList<>());`
 ---        
 
-- [ ] 🔵 210. Course Schedule II
+- [x] 🔵 210. Course Schedule II 🔴
+* 把course 和 preReq放进一个hashmap里，preReq是key，course放进value的list里面，但是在207 Course Schedule，刚好是反过来的
+* get `Indegrees`
+* get `preMap`
+* do `topoSort`
+
 - [ ] 🔵 269. Alien Dictionary
 
 ## 3. Matrix
