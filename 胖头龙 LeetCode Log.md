@@ -276,8 +276,11 @@ any other course, so this course can be completed and dfs should return true.
 - [x] 🔵 210. Course Schedule II 🔴
 * 把course 和 preReq放进一个hashmap里，preReq是key，course放进value的list里面，但是在207 Course Schedule，刚好是反过来的
 * get `Indegrees` -> get `preMap` -> do `topoSort`
+---
 
 - [ ] 🔵 269. Alien Dictionary
+
+---
 
 ## 3. Matrix
 - [x] 🟣 200. Number of Islands
