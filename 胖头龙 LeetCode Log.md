@@ -279,7 +279,7 @@ any other course, so this course can be completed and dfs should return true.
 * get `Indegrees` -> get `preMap` -> do `topoSort`
 ---
 
-- [ ] 🔵 269. Alien Dictionary 🔴
+- [x] 🔵 269. Alien Dictionary 🔴
 * [video (in Chinese)](https://www.youtube.com/watch?v=hWnvHiaXTsw)
 * `map` for `Map<Character, Set<Character>> map = new HashMap<>();`
 * `Map<Character, Integer> indegrees = new HashMap<>();`
