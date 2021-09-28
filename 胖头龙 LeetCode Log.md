@@ -110,8 +110,7 @@
 
 # III. BFS
 ## 1. Binary Tree
-- [x] 🟣 297. [Serialize and Deserialize Binary Tree](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BBFS%5D%20297.%20Serialize%20and%20Deserialize%20Binary%20Tree.java)
-* 🔴
+- [x] 🟣 297. [Serialize and Deserialize Binary Tree](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BBFS%5D%20297.%20Serialize%20and%20Deserialize%20Binary%20Tree.java) **[:red_circle:]**
 * `serialize(TreeNode root)`
 > use level order
 use `Queue` to traverse by level
