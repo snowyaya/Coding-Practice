@@ -261,6 +261,7 @@ public ArrayList<DirectedGraphNode> topSort(ArrayList<DirectedGraphNode> graph) 
 
 ---
 - [x] 🔵 207. Course Schedule 🔴
+* [video (in Chinese)](https://www.youtube.com/watch?v=m9jUbHKQjGc)
 * We will use a hash map to store each course and its prerequisites. 
 -> We will use a hashset to store each to-be-visited course, remove it after the course and its prerequisites get fully visited. 
 -> To get this done, we will use DFS to fully visit every course.
@@ -279,6 +280,8 @@ any other course, so this course can be completed and dfs should return true.
 ---
 
 - [ ] 🔵 269. Alien Dictionary
+* [video (in Chinese)](https://www.youtube.com/watch?v=hWnvHiaXTsw)
+
 
 ---
 
