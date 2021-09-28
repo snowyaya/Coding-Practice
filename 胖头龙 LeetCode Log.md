@@ -229,7 +229,7 @@ if (!levelList.isEmpty()) {
 ---
 
 ## 2. Topological Sort
-- [ ] 🟣 Lint-127. [Topological Sorting](https://www.lintcode.com/problem/127/) 🔴
+- [x] 🟣 Lint-127. [Topological Sorting](https://www.lintcode.com/problem/127/) 🔴
 * BFS???
 ```java
 public ArrayList<DirectedGraphNode> topSort(ArrayList<DirectedGraphNode> graph) {
