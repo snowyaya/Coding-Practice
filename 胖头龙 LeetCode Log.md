@@ -328,8 +328,18 @@ while q is not empty:
 
 - [x] 🟢 305. Number of Islands II
 
+---
+
 ## 4. Graph
-- [ ] 🟣 133. Clone Graph
+- [ ] 🟣 133. Clone Graph 🔴
+* use `map` to store visited nodes
+* use `queue` to store original nodes need to be visited
+* add to map and queue if this node hasn't been visited
+* if this node has been visited, add neighbor to newly created nodes
+* **?? hard to imagine how the newNode is created??**
+
+---
+
 - [ ] 🔵 127. Word Ladder
 - [ ] 🔵 261. Graph Valid Tree
 - [ ] 🔵 841. Keys an Rooms
