@@ -353,7 +353,14 @@ while q is not empty:
 
 ---
 
-- [ ] 🔵 841. Keys an Rooms
+- [x] 🔵 841. [Keys an Rooms](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BBFS%5D%20841%20Rooms%20and%20Keys.java) 🟡
+* `map` is not needed because we don't need to store no directed or undirect edges 
+* `set` to store the visited rooms
+* `queue` to store the to be visited rooms
+* start from visiting room 0, `q.offer(0)` & `visited.add(0)`
+* when room is found to be visited, `continue`
+* otherwise, visit the room
+* in the end, if all room can be visited, `rooms.size() == visited.size();`
 
 # IV. Binary Tree and Recursion
 ## 1. Traversal (Also need to be skilled with iteration)
