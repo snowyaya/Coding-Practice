@@ -229,7 +229,7 @@ if (!levelList.isEmpty()) {
 ---
 
 ## 2. Topological Sort
-- [x] 🟣 Lint-127. [Topological Sorting](https://www.lintcode.com/problem/127/) 🔴
+- [x] 🟣 Lint-127. [Topological Sorting](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BBFS%5D%20Lint-127%20Topological%20Sort.java) 🔴
 * BFS???
 ```java
 public ArrayList<DirectedGraphNode> topSort(ArrayList<DirectedGraphNode> graph) {
@@ -260,7 +260,7 @@ public ArrayList<DirectedGraphNode> topSort(ArrayList<DirectedGraphNode> graph) 
 ```
 
 ---
-- [x] 🔵 207. Course Schedule 🔴
+- [x] 🔵 207. [Course Schedule](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BBFS%5D%20207%20Course%20Schedule.java) 🔴
 * [video (in Chinese)](https://www.youtube.com/watch?v=m9jUbHKQjGc)
 * We will use a hash map to store each course and its prerequisites. 
 -> We will use a hashset to store each to-be-visited course, remove it after the course and its prerequisites get fully visited. 
@@ -274,12 +274,12 @@ any other course, so this course can be completed and dfs should return true.
 `preMap.replace(course, new ArrayList<>());`
 ---        
 
-- [x] 🔵 210. Course Schedule II 🔴
+- [x] 🔵 210. [Course Schedule II](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BBFS%5D%20210%20Course%20Schedule%20II.java) 🔴
 * 把course 和 preReq放进一个hashmap里，preReq是key，course放进value的list里面，但是在207 Course Schedule，刚好是反过来的
 * get `Indegrees` -> get `preMap` -> do `topoSort`
 ---
 
-- [x] 🔵 269. Alien Dictionary 🔴
+- [x] 🔵 269. [Alien Dictionary](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BBFS%5D%20269%20Alien%20Dictionary.java) 🔴
 * [video (in Chinese)](https://www.youtube.com/watch?v=hWnvHiaXTsw)
 * `map` for `Map<Character, Set<Character>> map = new HashMap<>();`
 * `Map<Character, Integer> indegrees = new HashMap<>();`
@@ -310,7 +310,7 @@ while q is not empty:
 ---
         
 - [x] 🔵 505. The Maze II
-- [x] 🔵 542. [01 Matrix](https://leetcode.com/problems/01-matrix/) 🔴
+- [x] 🔵 542. [01 Matrix](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BBFS%5D%20542%2001%20Matrix.java) 🔴
 * At beginning, set cell value to Integer.MAX_VALUE if it is not 0.
 * If newly calculated distance >= current distance, then we don't need to explore that cell again.
 ---
