@@ -316,12 +316,14 @@ while q is not empty:
 ---
 
 - [ ] 🔵 733. Flood Fill
-- [x] 🔵 994. [Rotting Oranges](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BBFS%5D%20994%20Rotton%20Oranges.java) 🔴
 
+---
+
+- [x] 🔵 994. [Rotting Oranges](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BBFS%5D%20994%20Rotton%20Oranges.java) 🔴
 * offer to rotten queue and count fresh oranges => `if fresh_count == 0, return 0`, if not => rotten all directions, count++
 * while rottening all directions, if `x, y` out of bound, or `[x][y] == 2 or == 0`, `continue;` else 1) rotten the orange 2) offer rotten oranges to queue 3) fresh_count--;
-`if grid[i][j] == 2, q.offer(new int[]{i,j});`
-`if grid[i][j] == 1, fresh_count++;`
+* `if grid[i][j] == 2, q.offer(new int[]{i,j});`
+* `if grid[i][j] == 1, fresh_count++;`
 ---
 
 - [ ] 🔵 305. Number of Islands II
