@@ -17,8 +17,8 @@ class Solution {
         System.out.println(map);
         
         // bfs starts with node in label "0"
-        Set<Integer> set = new HashSet<>();
-        Queue<Integer> q = new LinkedList<>();
+        Set<Integer> set = new HashSet<>(); // store explored node
+        Queue<Integer> q = new LinkedList<>(); // store nodes need to be explored
         q.offer(0);
         while(!q.isEmpty()) {
             int curr = q.poll();
