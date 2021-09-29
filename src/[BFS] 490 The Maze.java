@@ -6,9 +6,9 @@ class Solution {
         boolean[][] visited = new boolean[m][n];
         Queue<int[]> q = new LinkedList<>();
         q.offer(start);
-		visited[start[0]][start[1]] = true;
+	visited[start[0]][start[1]] = true;
         
-		int[][]directions= {{-1,0},{1,0},{0,-1},{0,1}};
+	int[][]directions= {{-1,0},{1,0},{0,-1},{0,1}};
         while (!q.isEmpty()) {
             int[] currPos = q.poll();
             
