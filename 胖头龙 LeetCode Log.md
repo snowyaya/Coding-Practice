@@ -315,7 +315,8 @@ while q is not empty:
 * If newly calculated distance >= current distance, then we don't need to explore that cell again.
 ---
 
-- [ ] 🔵 733. Flood Fill
+- [x] 🔵 733. Flood Fill
+* **NOT understand the problem!
 
 ---
 
@@ -332,15 +333,17 @@ while q is not empty:
 
 ## 4. Graph
 - [x] 🟣 133. Clone Graph 🔴
+* **?? hard to imagine how the newNode is created??**
 * use `map` to store visited nodes
 * use `queue` to store original nodes need to be visited
 * add to map and queue if this node hasn't been visited
 * if this node has been visited, add neighbor to newly created nodes
-* **?? hard to imagine how the newNode is created??**
-
 ---
 
-- [ ] 🔵 127. Word Ladder
+- [x] 🔵 127. [Word Ladder](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BBFS%5D%20127%20Word%20Ladder.java) 🔴
+* **NOT Understang AT ALL!!!
+---
+
 - [ ] 🔵 261. Graph Valid Tree
 - [ ] 🔵 841. Keys an Rooms
 
