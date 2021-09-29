@@ -326,7 +326,7 @@ while q is not empty:
 * `if grid[i][j] == 1, fresh_count++;`
 ---
 
-- [ ] 🔵 305. Number of Islands II
+- [x] 🟢 305. Number of Islands II
 
 ## 4. Graph
 - [ ] 🟣 133. Clone Graph
