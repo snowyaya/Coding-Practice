@@ -290,7 +290,7 @@ any other course, so this course can be completed and dfs should return true.
 
 ## 3. Matrix
 - [x] 🟣 200. Number of Islands
-- [x] 🔵 490. The Maze 🔴
+- [x] 🔵 490. [The Maze](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BBFS%5D%20490%20The%20Maze.java) 🔴
 * `boolean[][] visited = new boolean[m][n];`
 * `Queue<int[]> q = new LinkedList<>();`
 *  `int[][]directions= {{-1,0},{1,0},{0,-1},{0,1}};`
@@ -309,10 +309,12 @@ while q is not empty:
 ```
 ---
         
+- [x] 🔵 505. The Maze II
+- [x] 🔵 542. [01 Matrix](https://leetcode.com/problems/01-matrix/) 🔴
+* At beginning, set cell value to Integer.MAX_VALUE if it is not 0.
+* If newly calculated distance >= current distance, then we don't need to explore that cell again.
+---
 
-
-- [ ] 🔵 505. The Maze II
-- [ ] 🔵 542. 01 Matrix
 - [ ] 🔵 733. Flood Fill
 - [ ] 🔵 994. Rotting Oranges
 - [ ] 🔵 305. Number of Islands II
