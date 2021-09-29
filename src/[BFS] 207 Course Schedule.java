@@ -1,3 +1,45 @@
+// BFS
+class Solution {
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+        HashMap<Integer, List<Integer>> preMap = new HashMap<>();
+        HashMap<Integer, Integer> indegrees = new HashMap<>();
+        Queue<Integer> q = new LinkedList<>();
+        int count = numCourses; // number of successfully visited courses
+        
+        // initialize preMap and indegrees
+        for (int i = 0; i < prerequisites.length; i++) {
+            int course = prerequisites[i][0];
+            int preReq = prerequisites[i][1];
+            preMap.putIfAbsent(preReq, new ArrayList<Integer>());
+            preMap.get(preReq).add(course);
+            indegrees.putIfAbsent(course, 0);
+            indegrees.replace(course, indegrees.get(course) + 1);
+        }
+        
+        // add sources to queue
+        for (int i = 0; i < numCourses; i++) {
+            if (indegrees.get(i) == null || indegrees.get(i) == 0) {
+                q.offer(i);
+            }
+        }
+        
+        // bdf visit each course
+        while (!q.isEmpty()) {
+            int curr = q.poll();
+            for (int nei : preMap.getOrDefault(curr, new ArrayList<Integer>())) {
+                indegrees.replace(nei, indegrees.get(nei) - 1);
+                if (indegrees.get(nei) == 0) {
+                    q.offer(nei);
+                } 
+            }
+            count--;
+        }
+        return count == 0;
+    }
+}
+
+
+// DFS
 class Solution {
     // We will use a hash map to store each course and its prerequisites. 
     // We will use a hashset to store each to-be-visited course, remove it after the course and its
