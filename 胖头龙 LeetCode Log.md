@@ -344,7 +344,15 @@ while q is not empty:
 * **NOT Understang AT ALL!!!
 ---
 
-- [ ] 🔵 261. Graph Valid Tree
+- [x] 🔵 261. [Graph Valid Tree](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BBFS%5D%20261%20Graph%20Valid%20Tree.java) 🔴
+* use `map` to store the edges info
+* use `set` to store the explored nodes
+* use `queue` to store the nodes need to be explored
+* if the node found to be existing in set already, return false **need to know when to return false**
+* if not, 1)explore the neighbors 2) removing the edge 3) add to set afterwards
+
+---
+
 - [ ] 🔵 841. Keys an Rooms
 
 # IV. Binary Tree and Recursion
