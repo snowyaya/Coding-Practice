@@ -331,7 +331,7 @@ while q is not empty:
 ---
 
 ## 4. Graph
-- [ ] 🟣 133. Clone Graph 🔴
+- [x] 🟣 133. Clone Graph 🔴
 * use `map` to store visited nodes
 * use `queue` to store original nodes need to be visited
 * add to map and queue if this node hasn't been visited
