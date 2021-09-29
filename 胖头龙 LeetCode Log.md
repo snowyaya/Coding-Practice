@@ -361,6 +361,7 @@ while q is not empty:
 * when room is found to be visited, `continue`
 * otherwise, visit the room
 * in the end, if all room can be visited, `rooms.size() == visited.size();`
+---
 
 # IV. Binary Tree and Recursion
 ## 1. Traversal (Also need to be skilled with iteration)
