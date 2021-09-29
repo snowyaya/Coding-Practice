@@ -290,7 +290,27 @@ any other course, so this course can be completed and dfs should return true.
 
 ## 3. Matrix
 - [x] 🟣 200. Number of Islands
-- [ ] 🔵 490. The Maze
+- [x] 🔵 490. The Maze 🔴
+* `boolean[][] visited = new boolean[m][n];`
+* `Queue<int[]> q = new LinkedList<>();`
+*  `int[][]directions= {{-1,0},{1,0},{0,-1},{0,1}};`
+```
+while q is not empty:
+  poll out the currpos in q
+  if the curr postions == destination, return true
+  else:
+    check all directions
+    x = currpos[0] + d[0]
+    y = currpos[1] + d[1]
+    keep visiting all directions
+    if not visited: 
+      add to visited (decrement x and y)
+      add to q
+```
+---
+        
+
+
 - [ ] 🔵 505. The Maze II
 - [ ] 🔵 542. 01 Matrix
 - [ ] 🔵 733. Flood Fill
