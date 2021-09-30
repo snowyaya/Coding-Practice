@@ -414,8 +414,25 @@ while q is not empty:
 ## 1. Combinations/Permutations
 
 ## 2. Binary Tree
+- [ ] 🔵 113. Path Sum II
+- [ ] 🔵 257. Binary Tree Paths
+- [ ] 🔵 Lint-246. Binary Tree Path Sum II
+- [ ] 🔵 Lint-376. Binary Tree Path Sum
+- [ ] 🔵 Lint-472. Binary Tree Path Sum III
 
 ## 3. Graph
+- [x] 🔵 547. [Number of Provinces](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BDFS%5D%20547%20Number%20of%20Provinces.java) 🔴
+* one way is to have a `visited[][]` and set `visited[i][j]=true` after visited it
+* another way to save the extra space for `visited[][]` is to set the `isConnected[i][j] = 0` after visited it.
+
+---
+
+- [ ] 🔵 140. Word Break II
+- [ ] 🔵 494. Target Sum
+- [ ] 🔵 1192. Critical Connections is a Network
+- [ ] 🟢 12. Word Ladder II
+- [ ] 🟢 290. Word Pattern
+- [ ] 🟢 291. Word Pattern II
 
 # VI. Data Structures
 ## 1. Array & Matrix
