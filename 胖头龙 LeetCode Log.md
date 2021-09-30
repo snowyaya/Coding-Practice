@@ -424,7 +424,7 @@ while q is not empty:
 
 ---
 
-- [ ] 🔵 257. Binary Tree Paths 🟤
+- [ ] 🔵 257. [Binary Tree Paths](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/src/%5BDFS%5D%20257%20Binary%20Tree%20Paths.java) 🟤
 * be clear with the corner case, which is `root==null`
 * be careful with the base case, meaning in what case the methd should return the expected result, `root.left==null && root.righ==null`
 
