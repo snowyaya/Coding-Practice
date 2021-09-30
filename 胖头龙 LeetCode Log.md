@@ -424,7 +424,12 @@ while q is not empty:
 
 ---
 
-- [ ] 🔵 257. Binary Tree Paths
+- [ ] 🔵 257. Binary Tree Paths 🟤
+* be clear with the corner case, which is `root==null`
+* be careful with the base case, meaning in what case the methd should return the expected result, `root.left==null && root.righ==null`
+
+---
+
 - [ ] 🔵 Lint-246. Binary Tree Path Sum II
 - [ ] 🔵 Lint-376. Binary Tree Path Sum
 - [ ] 🔵 Lint-472. Binary Tree Path Sum III
