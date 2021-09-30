@@ -414,7 +414,16 @@ while q is not empty:
 ## 1. Combinations/Permutations
 
 ## 2. Binary Tree
-- [ ] 🔵 113. Path Sum II
+- [x] 🔵 113. Path Sum II
+* use recursion
+* be aware of when `getPath()` should return `null`, when `root == null`
+* after `targetSum -= root.val`, need to add `root.val` to the nested `list`
+* understand when to add the nested `list` to the output `list`, when `left == null && right == null && targetSum == 0`, meaning we are now at an expected position, so we can have `out.add(new ArrayList<>(list))`
+* if not reached the bast case, keep `getPath()` from `root.left` and `root.right`
+* lastly, `list.remove(list.size()-1)` // remove the last element if the targetSum != 0
+
+---
+
 - [ ] 🔵 257. Binary Tree Paths
 - [ ] 🔵 Lint-246. Binary Tree Path Sum II
 - [ ] 🔵 Lint-376. Binary Tree Path Sum
