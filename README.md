@@ -1,24 +1,63 @@
-# I Coding & BQ Summary
-## 1. Practice Log
-[胖头龙 LeetCode Log](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/%E8%83%96%E5%A4%B4%E9%BE%99%20LeetCode%20Log.md) **NOW** <br/> 
-[101 LeetCode Log](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/101%20LeetCode%20Log.md) <br/> 
-[New Practice and Explanation](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/New%20Practice%20and%20Explanation.md) <br/>
-[BQ Log](https://github.com/snowyaya/SWE-Interview-Prep/tree/master/BQ)
-## 2. Coding Mocks
-| Date | Coding Mock |
-| --- | --- |
-| 9/15/21 | 🔴 need to review `trie` and `priority queue` |
-| 9/15/21 | In BST, using `binary search` to traverse the tree takes `O(h) = O(logn)` runtime, worst case is `O(n)` | 
-| 9/16/21 | |
+# Coding Practice
 
-# II. Data Structure and Algorithms
-## 1. Recursion
+This coding practice refers to [胖头龙 LeetCode Log](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/%E8%83%96%E5%A4%B4%E9%BE%99%20LeetCode%20Log.md)
+
+## I. Progress
+
+### Binary Search
+- [x] 704. BInary Search
+- [x] 34. Find First and Last Position of Element in Sorted Array
+- [x] 702. Search in a Sorted Array of Unknow Size
+- [ ] 153. Find Minimum in Rotated Sorted Array
+- [ ] 154. Find Minimum in a Rotated Sorted Array II
+- [ ] 278. First Bad Version
+- [ ] 658. Find K Closest Elements
+
+
+
+# II. Templates
+## Recursion
 [Recurison in Programming (freeCodeCamp)](https://www.youtube.com/watch?v=IJDJ0kBx2LM)
 ## Big O Notation
 [Big O Notation(freeCodeCamp)](https://www.youtube.com/watch?v=Mo4vesaut8g&t=784s)
 
-## 1. Union Find | Disjoint Sets
-### 1) what is union find?
+## Binary Search
+#### 1) How does it work?
+n its simplest form, Binary Search operates on a contiguous sequence with a specified left and right index. This is called the Search Space. Binary Search maintains the left, right, and middle indicies of the search space and compares the search target or applies the search condition to the middle value of the collection; if the condition is unsatisfied or values unequal, the half in which the target cannot lie is eliminated and the search continues on the remaining half until it is successful. If the search ends with an empty half, the condition cannot be fulfilled and target is not found.
+
+In the following chapters, we will review how to identify Binary Search problems, reasons why we use Binary Search, and the 3 different Binary Search templates that you might be previously unaware of. Since Binary Search is a common interview topic, we will also categorize practice problems to different templates so you can practice using each.
+
+#### 2) Template
+Template #1 is the most basic and elementary form of Binary Search. It is the standard Binary Search Template that most high schools or universities use when they first teach students computer science. Template #1 is used to search for an element or condition which can be determined by accessing a single index in the array.
+
+**Distinguishing Syntax**
+* Initial Condition: `left = 0, right = length-1`
+* Termination: `left > right`
+* Searching Left: `right = mid-1`
+* Searching Right: `left = mid+1`
+
+**Implementation**
+```java
+int binarySearch(int[] nums, int target){
+  if(nums == null || nums.length == 0)
+    return -1;
+
+  int left = 0, right = nums.length - 1;
+  while(left <= right){
+    // Prevent (left + right) overflow
+    int mid = left + (right - left) / 2;
+    if(nums[mid] == target){ return mid; }
+    else if(nums[mid] < target) { left = mid + 1; }
+    else { right = mid - 1; }
+  }
+
+  // End Condition: left > right
+  return -1;
+}
+```
+
+## Union Find | Disjoint Sets
+#### 1) what is union find?
 [Reference](https://github.com/ryancheunggit/leetcode/blob/rise/note/union_find.md)
 * Union Find is a data structure keeps track of a set of elements that are partitioned into a number of disjoint subsets.
 * It has two operations `union(p, q)` and `find(p)`.
@@ -28,66 +67,8 @@
 * The algorithm can be used to find all connected components in a network.
 * It is also used in kruskal's algorithm to find the minimal spanning tree for a graph.
 
-### 2) Algorithms
-* William Fiset
-   * [Union Find Intro](https://www.youtube.com/watch?v=ibjEGG7ylHk&t=0s)
-   * [Union find kruskal's algorithm](https://www.youtube.com/watch?v=JZBQLXgSGfs&t=0s)
-   * [Union and Find](https://www.youtube.com/watch?v=0jNmHPfA_yE&t=0s)
-   * [Path Compression](https://www.youtube.com/watch?v=VHRhJWacxis&t=0s)
-   * [Source Code](https://www.youtube.com/watch?v=KbFlZYCpONw&t=0s)
-* Tushar Roy
-   * [Disjoint Sets using union by rank and path compression Graph Algorithm](https://www.youtube.com/watch?v=ID00PMy0-vE&t=1s)
-
-### 3) Implementation (Java)
-```java
-public class UnionFind {
-    private int[] parent;
-    public UnionFind(int n) {
-        parent = new int[n];
-        for (var i = 0; i < n; i++) {
-            parent[i] = i;
-        }
-    }
- 
-    public int Find(int x) {
-        if (x == parent[x]) {
-            return x;
-        }
-        // compress the paths
-        return parent[x] = Find(parent[x]);
-    }
- 
-    public void Union(int x, int y)  {
-        var px = Find(x);
-        var py = Find(y);
-        if (px != py) {
-            parent[px] = py;
-        }
-    }
- 
-    public int size() { // number of groups
-        int ans = 0;
-        for (int i = 0; i < parent.length(); ++ i) {
-            if (i == parent[i]) ans ++;
-        }
-        return ans;
-    }  
-}
-```
-### 4) Use union find to find connected components in undirected graph
-![Alt Text](https://raw.githubusercontent.com/ryancheunggit/leetcode/rise/note/assets/union_find_animation.gif)
-
-```python
-connections = [[0, 1], [1, 2], [2, 3], [3, 4], [5, 6], [6, 8], [7, 9]]
-
-uf = UnionFind(10)
-for p, q in connections: uf.union(p, q)
-num_components = len(set(uf.find(i) for i in range(10)))
-print(num_components)
-```
-## 3. Binary Tree
-### 1) Traversal
-#### a) Inorder (left -> root -> right)
+## Binary Tree
+#### 1) Inorder (left -> root -> right)
 ```java
 // Recursive
 public void inorderTraversal(TreeNode root) {
@@ -127,7 +108,7 @@ public List<Integer> inorderTraversal(TreeNode root) {
 }
 ```
 
-#### b) Preorder (root -> left -> right; iterative investigate root.right then root.left)
+#### 2) Preorder (root -> left -> right; iterative investigate root.right then root.left)
 ```java
 // Recursive
 private void preOrderTraversal(TreeNode root) {
@@ -160,7 +141,7 @@ public void preorderTraversal(TreeNode root) {
 }
 ```
 
-#### c) Postorder (left -> right -> root)
+#### 3) Postorder (left -> right -> root)
 ```java
 // Recursive
 public void postorderTraversal(TreeNode root) {
@@ -203,7 +184,7 @@ public void postorderTraversal(TreeNode root) {
 }        
 ```
 
-#### d) Level order
+#### 4) Level order
 ```java
 // Recursive
 class LevelOrderTraversal {
@@ -272,8 +253,8 @@ public void levelOrder(TreeNode root) {
    }
 }
 ```
-## 4. Merge Sort
-### 1) Intuition
+## Merge Sort
+#### 1) Intuition
 There are two approaches to implement the merge sort algorithm: top down or bottom up. Here, we will explain the top down approach as it can be implemented naturally using recursion.
 
 The merge sort algorithm can be divided into three steps, like all divide-and-conquer algorithms:
@@ -284,7 +265,7 @@ The merge sort algorithm can be divided into three steps, like all divide-and-co
 3. Merge the sorted sublists to produce new sorted list.  (Combine)
 ```
 
-### 2) Top-Down Approach
+#### 2) Top-Down Approach
 Let us look at a concrete example to see how the top-down merge sort algorithm works. As shown in the figure below, we are given an unordered list with 8 elements. The task is to sort the list in ascending order. 
 
 ![alt text](https://assets.leetcode.com/uploads/2019/04/15/topdown_mergesort.png)
@@ -340,7 +321,7 @@ public class Solution {
     }
 }
 ```
-### 3) Bottom-Up Approach
+#### 3) Bottom-Up Approach
 
 In the bottom up approach, we divide the list into sublists of a single element at the beginning. Each of the sublists is then sorted already. Then from this point on, we merge the sublists two at a time until a single list remains.
 
@@ -363,8 +344,8 @@ Taking into account the complexity of the above two parts in the merge sort algo
 
 The space complexity of the merge sort algorithm is **O(N)**, where *N* is the length of the input list, since we need to keep the sublists as well as the buffer to hold the merge results at each round of merge process.
 
-## 5. Divide and Conquer
-### 1) What is divide and conquer?
+## Divide and Conquer
+#### 1) What is divide and conquer?
 
 A divide-and-conquer algorithm works by recursively breaking the problem down into two or more subproblems of the same or related type, until these subproblems become simple enough to be solved directly. Then one combines the results of subproblems to form the final solution.
 
@@ -380,7 +361,7 @@ There are in general three steps that one can follow in order to solve the probl
 
 ![alt text](https://assets.leetcode.com/uploads/2019/04/24/d_c.png)
 
-### 2) Approach Template
+#### 2) Template
 
 ```python
 def divide_and_conquer( S ):
@@ -399,7 +380,7 @@ def divide_and_conquer( S ):
 
 As one can see from the above template, the essential part of the divide and conquer is to figure out the `recurrence relationship` between the subproblems and the original problem, which subsequently defines the functions of `divide()` and `combine()`. 
 
-### 3) Examples
+#### 3) Examples
 #### a) Validate Binary Search Tree
 Sometimes, tree related problems can be solved using divide-and-conquer algorithms.
 
@@ -464,8 +445,8 @@ First, we choose the middle point on the column which divides the matrix into tw
 
 We ignore the top left sub-matrix that ends with the element *V_i-1*, because all the elements within this sub-matrix would be less than the target value. Similarly, we ignore the bottom right sub-matrices that starts with the element *V_i*, because we know that all the elements within this sub-matrix would be greater than the target value.
 
-## 6. Quick Sort
-### 1) Intuition
+## Quick Sort
+#### 1) Intuition
 Following the pseudocode template of the divide-and-conquer algorithm, as we presented before, the quick sort algorithm can be implemented in three steps, namely dividing the problem, solving the subproblems and combining the results of subproblems.
 
 In detail, given a list of values to sort, the quick sort algorithm works in the following steps:
@@ -480,7 +461,7 @@ The base cases of the recursion in step [2] are either when the input list is em
 
 As one can see, the essential idea of the quick sort algorithm is the `partitioning process`, which elegantly reduces the problems into smaller scale and meanwhile moves towards the final solution, i.e. after each partitioning, the overall values become more ordered. 
 
-### 2) Algorithm
+#### 2) Algorithm
 In the following figure, we demonstrate how the quick sort algorithm works to sort a list of integer values. The input list contains 8 elements.
 ![alt text](https://assets.leetcode.com/uploads/2019/03/24/quicksort.png)
 
@@ -490,7 +471,7 @@ Next, we recursively sort the above two sublists. For instance, for the sublist 
 
 Once we sorted the sublists `[1, 3, 2]` and `[8, 7, 6, 5]` respectively, we simply concatenate the sorted results together with the pivot value (4) to form the final result, i.e. `[1, 2, 3] + [4] + [5, 6, 7, 8]`.
 
-### 3) Implementation
+#### 3) Template
 ```java
 public class Solution {
 
@@ -529,7 +510,7 @@ public class Solution {
   }
 }
 ```
-### 4) Complexity
+#### 4) Complexity
 Depending on the pivot values, the time complexity of the quick sort algorithm can vary from *O(NlogN)* in the best case and *O(N^2)* in the worst case, with *N* as the length of the list.
 
 In the best case, if the pivot value happens to be median value of the list, then at each partition the list would be divided into two sublists of equal size. At the end, we actually construct a balanced binary search tree (BST) out of the list. One can infer that the height of the tree would be *logN*, and at each level of the tree the input list would be scanned once with the complexity *O(N)* due to the partitioning process. As a result, the overall time complexity of the algorithm in this case would be *O(NlogN)*.
@@ -538,123 +519,3 @@ While in the worst case, if the pivot value happens to be the extreme value of t
 
 On average, as proved mathematically, the time complexity of quick sort is *O(NlogN)*.  
 
-## 7. Binary Search
-### 1) How does it work?
-n its simplest form, Binary Search operates on a contiguous sequence with a specified left and right index. This is called the Search Space. Binary Search maintains the left, right, and middle indicies of the search space and compares the search target or applies the search condition to the middle value of the collection; if the condition is unsatisfied or values unequal, the half in which the target cannot lie is eliminated and the search continues on the remaining half until it is successful. If the search ends with an empty half, the condition cannot be fulfilled and target is not found.
-
-In the following chapters, we will review how to identify Binary Search problems, reasons why we use Binary Search, and the 3 different Binary Search templates that you might be previously unaware of. Since Binary Search is a common interview topic, we will also categorize practice problems to different templates so you can practice using each.
-
-### 2) Template I
-Template #1 is the most basic and elementary form of Binary Search. It is the standard Binary Search Template that most high schools or universities use when they first teach students computer science. Template #1 is used to search for an element or condition which can be determined by accessing a single index in the array.
-
-**key Attributes**
-* Most basic and elementary form of Binary Search
-* Search Condition can be determined without comparing to the element's neighbors (or use specific elements around it)
-* No post-processing required because at each step, you are checking to see if the element has been found. If you reach the end, then you know the element is not found
-
-**Distinguishing Syntax**
-* Initial Condition: `left = 0, right = length-1`
-* Termination: `left > right`
-* Searching Left: `right = mid-1`
-* Searching Right: `left = mid+1`
-
-**Implementation**
-```java
-int binarySearch(int[] nums, int target){
-  if(nums == null || nums.length == 0)
-    return -1;
-
-  int left = 0, right = nums.length - 1;
-  while(left <= right){
-    // Prevent (left + right) overflow
-    int mid = left + (right - left) / 2;
-    if(nums[mid] == target){ return mid; }
-    else if(nums[mid] < target) { left = mid + 1; }
-    else { right = mid - 1; }
-  }
-
-  // End Condition: left > right
-  return -1;
-}
-```
-
-### 3) Template II
-Template #2 is an advanced form of Binary Search. It is used to search for an element or condition which requires accessing the current index and its immediate right neighbor's index in the array.
-
-**key Attributes**
-* An advanced way to implement Binary Search.
-* Search Condition needs to access element's immediate right neighbor
-* Use element's right neighbor to determine if condition is met and decide whether to go left or right
-* Gurantees Search Space is at least 2 in size at each step
-* Post-processing required. Loop/Recursion ends when you have 1 element left. Need to assess if the remaining element meets the condition.
-
-**Distinguishing Syntax**
-* Initial Condition: `left = 0, right = length`
-* Termination: `left == right`
-* Searching Left: `right = mid`
-* Searching Right: `left = mid+1`
-
-**Implementation**
-```java
-int binarySearch(int[] nums, int target){
-  if(nums == null || nums.length == 0)
-    return -1;
-
-  int left = 0, right = nums.length;
-  while(left < right){
-    // Prevent (left + right) overflow
-    int mid = left + (right - left) / 2;
-    if(nums[mid] == target){ return mid; }
-    else if(nums[mid] < target) { left = mid + 1; }
-    else { right = mid; }
-  }
-
-  // Post-processing:
-  // End Condition: left == right
-  if(left != nums.length && nums[left] == target) return left;
-  return -1;
-}
-```
-
-### 3) Template III
-Template #3 is another unique form of Binary Search. It is used to search for an element or condition which requires accessing the current index and its immediate left and right neighbor's index in the array.
-
-**key Attributes**
-* An alternative way to implement Binary Search
-* Search Condition needs to access element's immediate left and right neighbors
-* Use element's neighbors to determine if condition is met and decide whether to go left or right
-* Gurantees Search Space is at least 3 in size at each step
-* Post-processing required. Loop/Recursion ends when you have 2 elements left. Need to assess if the remaining elements meet the condition.
-
-**Distinguishing Syntax**
-* Initial Condition: `left = 0, right = length-1`
-* Termination: `left + 1 == right`
-* Searching Left: `right = mid`
-* Searching Right: `left = mid`
-
-**Implementation**
-```java
-int binarySearch(int[] nums, int target) {
-    if (nums == null || nums.length == 0)
-        return -1;
-
-    int left = 0, right = nums.length - 1;
-    while (left + 1 < right){
-        // Prevent (left + right) overflow
-        int mid = left + (right - left) / 2;
-        if (nums[mid] == target) {
-            return mid;
-        } else if (nums[mid] < target) {
-            left = mid;
-        } else {
-            right = mid;
-        }
-    }
-
-    // Post-processing:
-    // End Condition: left + 1 == right
-    if(nums[left] == target) return left;
-    if(nums[right] == target) return right;
-    return -1;
-}
-```
