@@ -3,15 +3,13 @@
 This coding practice refers to [胖胖龙的刷题笔记]()
 
 ## I. Progress
-> Focus on growth; Aim Small; Be consistant.
-> Strategy
-> 🟣 Must
-> 🔵 Core
-> 🟢 Important
+>Focus on growth; Aim Small; Be consistant.
+>Strategy
+>🟣 Must
+>🔵 Core
+>🟢 Important
+>🔴 Need revisit
 
-> 🔴 Not mastered
-> 🟡 Sort of mastered
-> 🟤 mastered
 
 ### Binary Search
 #### 1. 朴素二分法
