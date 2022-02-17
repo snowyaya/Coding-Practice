@@ -12,36 +12,6 @@
 🟡 Sort of mastered
 🟤 mastered
 
-| Strategy | Description |
-| --- | --- |
-| 初刷 | 1) It's okay to 'copy' the solution, but use your own style to write the code <br/> 2) ~30 min/each |
-| 精刷 | 1) Fully understand the solution <br/> 2) Take notes of the algorithms <br/>  3) Mark the problem if cannot fully understand <br/> 4) ~ 60 min/each |
-| 复刷 | 1) Speak your algorithms loud <br/> 2) Refer to the notes and solution <br/> 3) Reflect on where needs improving <br/> 4) ~20 min/each |
-| 回顾 | 1) Review by tags <br/> 2) Go over algorithms in mind <br/> 3) Solidify the memory, DO NOT WRITE CODE <br/> 4) ~5-10 min/each |
-| 讲解 | 1) Teach on whiteboard |
-| 模拟 | 1) New problem <br/> 2) ~30 min/each|
-
-### 1st step: 初刷 🟣 + 🔵 [NOW]
-
-### 2nd step: 精刷 🟣
-
-### 3rd step: 精刷 🔵
-
-### 4th step: 初刷 🟢
-
-
-### 5th step: 复刷 🟣 + 🔵 
-
-
-### 6th step: 精刷 🟢 + 回顾 (🟣 + 🔵)
-
-### 7th step: 复刷 (🟣 + 🔵) + 回顾 🟢
-
-### 8th step: 复刷 🟢 + 回顾 ALL
-
-### 9th step:  回顾 ALL + MOCK
-
-
 # I. Binary Search
 ## 1. 朴素二分法
 - [ ] 🟣 704. Binary Search
