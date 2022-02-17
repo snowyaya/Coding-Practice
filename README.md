@@ -17,7 +17,7 @@ Strategy
 #### 1. 朴素二分法
 - [x] 🟣 704. Binary Search
 - [x] 🔵 34. Find First and Last Position of Element in Sorted Array
-- [ ] 🔵 702. Search in a Sorted Array of Unknown Size
+- [x] 🔵 702. Search in a Sorted Array of Unknown Size
 - [ ] 🟢 153. Find Minimum in Rotated Sorted Array
 - [ ] 🟢 154. Find Minimum in Rotated Sorted Array II
 - [ ] 🟢 278. First Bad Version
