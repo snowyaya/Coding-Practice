@@ -3,12 +3,12 @@
 This coding practice refers to [胖胖龙的刷题笔记]()
 
 ## I. Progress
->Focus on growth; Aim Small; Be consistant.
->Strategy
->🟣 Must
->🔵 Core
->🟢 Important
->🔴 Need revisit
+> Focus on growth; Aim Small; Be consistant.
+> Strategy
+> 🟣 Must
+> 🔵 Core
+> 🟢 Important
+> 🔴 Need revisit
 
 
 ### Binary Search
