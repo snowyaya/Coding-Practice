@@ -1,19 +1,242 @@
 # Coding Practice
 
-This coding practice refers to [胖头龙 LeetCode Log](https://github.com/snowyaya/SWE-Interview-Prep/blob/master/%E8%83%96%E5%A4%B4%E9%BE%99%20LeetCode%20Log.md)
+This coding practice refers to [胖头龙的刷题笔记]()
 
 ## I. Progress
+> Focus on growth; Aim Small; Be consistant.
+> Strategy
+> 🟣 Must
+> 🔵 Core
+> 🟢 Important
+
+> 🔴 Not mastered
+> 🟡 Sort of mastered
+> 🟤 mastered
 
 ### Binary Search
-- [x] 704. BInary Search
-- [x] 34. Find First and Last Position of Element in Sorted Array
-- [x] 702. Search in a Sorted Array of Unknow Size
-- [ ] 153. Find Minimum in Rotated Sorted Array
-- [ ] 154. Find Minimum in a Rotated Sorted Array II
-- [ ] 278. First Bad Version
-- [ ] 658. Find K Closest Elements
+#### 1. 朴素二分法
+- [x] 🟣 704. Binary Search
+- [x] 🔵 34. Find First and Last Position of Element in Sorted Array
+- [ ] 🔵 702. Search in a Sorted Array of Unknown Size
+- [ ] 🟢 153. Find Minimum in Rotated Sorted Array
+- [ ] 🟢 154. Find Minimum in Rotated Sorted Array II
+- [ ] 🟢 278. First Bad Version
+- [ ] 🟢 658. Find K Closest Elements
+
+#### 2. 答案二分法
+- [ ] 🟣 33. Search in Rotated Sorted Array
+- [ ] 🟣 81. Search in Rotated Sorted Array II
+- [ ] 🔵 4. Median of Two Sorted Arrays
+- [ ] 🔵 74. Search a 2D Matrix
+- [ ] 🔵 162. Find Peak Element
+- [ ] 🟢 302. Smallest Rectangle enclosing Black Pixels
+- [ ] 🟢 852. Peak Index in a Mountain Array
+
+#### 3. 条件二分法
+- [ ] 🔵 875. Koko Eating Bananas
+- [ ] 🔵 1283. Find the Smallest Divisor Given a Threshold
+- [ ] 🟢 69. Sqrt(x)
+- [ ] 🟢 Lint-586. Sqrt(x) II
+- [ ] 🟢 Lint-183. Wood Cut
+- [ ] 🟢 Lint-437.Copy Books
+- [ ] 🟢 Lint-438. Copy Books II
+
+### Pointers
+#### 1. Array
+- [x] 🟣 912. Sort An Array (quick sort and merge sort)
+- [x] 🟣 75. Sort Colors
+- [x] 🔵 26. Remove Duplicates from Sorted Array
+- [x] 🔵 80. Remove Duplicateds from Sorted Array II
+- [x] 🔵 88. Merge Sorted Array
+- [x] 🔵 283. Move Zeroes
+- [x] 🔵 215. Kth Largest Element in an Array
+- [x] 🔵 347. Top K Frequent Elements
+- [x] 🔵 349. Intersections of Two Arrays
+- [x] 🔵 350. Intersections of Two Arrays II
+- [x] 🔵 845. Longest Mountain in Array
+- [x] 🔵 42. Trapping Rain Water
+- [x] 🔵 43. Multiply Strings
+
+#### 2. Linked List
+- [x] 🟣 21. Merge Two Sorted Lists
+- [x] 🔵 86. Partition List
+- [x] 🔵 141. Linked List Cycle
+- [x] 🔵 160. Intersection of Two Linked List
+- [x] 🔵 234. Palindrome Linked List
+- [x] 🔵 328. Odd Even Linked List
+
+#### 3. Sliding Window
+- [ ] 🟣 3. Longest Substring without Repeating Characters
+- [ ] 🔵 11. Container With Most Water
+- [ ] 🔵 76. Minimum Window Substring
+- [x] 🔵 209. Monimum Size Subarray Sum
+- [x] 🔵 239. Sliding Window Maximum
+- [x] 🔵 713. Subarray Product Less Than K
+
+#### 4. Interval
+- [x] 🔵 56. Merge Intervals
+- [ ] 🔵 57. Insert Interval
+- [ ] 🔵 252. meeting Rooms
+- [ ] 🔵 253. Meeting Rooms II
+- [x] 🔵 986. Interval List Intersections
+
+#### 5. String
+- [x] 🔵 5. Longest Palindromic Substring
+- [x] 🔵 345. Reverse Vowels of a String
+- [x] 🔵 680. Valid Palindrome II
+
+#### 6. Stream
+- [x] 🔵 295. Find Mediam from Data Stream
+
+#### 7. Subarray
+- [x] 🟣 53. Maximum Subarray
+- [ ] 🔵 238. Product of Array Except Self
+- [ ] 🔵 303. Range Sum Query - Immutable
+- [ ] 🔵 325. Maximum Size Subarray Sum equals K
+- [ ] 🔵 528. Random Pick with Weight
+- [ ] 🔵 560. Subarray Sum Equals K
+
+#### 8. Sum and Difference
+- [x] 🟣 1. Two Sum
+- [x] 🔵 15. 3Sum
+- [ ] 🔵 18. 4Sum
 
 
+### BFS
+#### 1. Binary Tree
+- [x] 🟣 297. Serialize and Deserialize Binary Tree
+- [x] 🔵 102. Binary Tree Level Order Traversal
+- [x] 🔵 103. Binary Tree Zigzag Level Order Traversal
+- [x] 🔵 107. Binary Tree Level Order Traversal II 
+- [x] 🔵 513. Find Bottom Left Tree Value �
+
+#### 2. Topological Sort
+- [x] 🟣 Lint-127. Topological Sorting
+- [x] 🔵 207. Course Schedule
+- [x] 🔵 210. Course Schedule II
+- [x] 🔵 269. Alien Dictionary
+
+#### 3. Matrix
+- [x] 🟣 200. Number of Islands
+- [x] 🔵 490. The Maze
+- [x] 🔵 505. The Maze II
+- [x] 🔵 542. 01 Matrix
+- [x] 🔵 733. Flood Fill
+- [x] 🔵 994. Rotting Oranges
+- [x] 🟢 305. Number of Islands II
+
+#### 4. Graph
+- [x] 🟣 133. Clone Graph
+- [x] 🔵 127. Word Ladder
+- [x] 🔵 261. Graph Valid Tree
+- [x] 🔵 841. Keys an Rooms
+
+
+### Binary Tree and Recursion
+#### 1. Traversal (Also need to be skilled with iteration)
+- [x] 🟣 94. Binary Tree Inorder Traversal
+- [x] 🟣 144. Binary Tree Preorder Traversal
+- [x] 🟣 145. Binary Tree Postorder Traversal
+- [ ] 🟣 105. Construct Binary Tree from Preorder and Inorder Traversal
+- [ ] 🔵 106. Construct Binary Tree from Inorder and Postorder Traversal
+- [ ] 🔵 889. Construct Binary Tree from Preorder and Postorder Traversal
+
+#### 2. Iterator
+- [ ] 🟣 173. Binary Search Tree Iterator
+- [ ] 🔵 230. Kth Smallest Element in a BST
+- [ ] 🔵 285. Inorder Successor in BST
+- [ ] 🟢 270. Closest Binary Search Tree Value
+- [ ] 🟢 272. Closest Binary Search Tree Value II
+- [ ] 🟢 510. Inorder Successor in BST II
+
+#### 3. Subtree
+- [ ] 🔵 111. Minimum Depth of Binary Tree
+- [x] 🟢 104. Maximum Depth of Binary Tree
+- [ ] 🟢 333. Largest BST Subtree
+
+#### 4. LCA
+- [x] 🔵 236. Lowest Common Ancestor of a Binary Tree
+- [x] 🟢 235. Lowest Common Ancestor of a Binary Search Tree
+- [ ] 🔵 1650. Lowest Common Ancestor of a Binary Tree III
+
+#### 5. Tree Type
+- [x] 🔵 98. Validate Binary Search Tree
+- [ ] 🔵 100. Same Tree
+- [x] 🔵 101. Symmetric Tree
+- [x] 🔵 110. Balanced Binary Tree
+
+#### 6. Path
+- [ ] 🔵 112. Path Sum
+- [ ] 🔵 113. Path Sum II
+- [ ] 🔵 124. Binary Tree Maximum Path Sum
+- [ ] 🟢 298. Binary Tree Longest Consecutive Sequence
+- [ ] 🟢 549. Binary Tree Longest Consecutive Sequence II
+
+#### 7. Others
+- [ ] 🔵 199. Binary Tree Right Side View
+- [ ] 🔵 513. Find Bottom Left Tree Value
+- [ ] 🔵 331. Verify Preorder Serialization of a Binary Tree
+- [ ] 🔵 449. Serialize and Deserialize BST
+- [ ] 🟢 114. Flatten Binary Tree to Linked List
+
+### DFS
+#### 1. Combinations/Permutations
+
+#### 2. Binary Tree
+- [x] 🔵 113. Path Sum II
+- [x] 🔵 257. Binary Tree Paths
+- [ ] 🔵 Lint-246. Binary Tree Path Sum II
+- [ ] 🔵 Lint-376. Binary Tree Path Sum
+- [ ] 🔵 Lint-472. Binary Tree Path Sum III
+
+#### 3. Graph
+- [x] 🔵 547. Number of Provinces
+- [ ] 🔵 140. Word Break II
+- [ ] 🔵 494. Target Sum
+- [ ] 🔵 1192. Critical Connections is a Network
+- [ ] 🟢 12. Word Ladder II
+- [ ] 🟢 290. Word Pattern
+- [ ] 🟢 291. Word Pattern II
+
+### Data Structures
+#### 1. Array & Matrix
+
+#### 2. Linked List
+
+#### 3. String
+
+#### 4. Hash
+
+#### 5. Stack
+
+#### 6. Union Find
+
+#### 7. Sweep Line
+
+#### 8. Complex Data Structure
+
+#### 9. Heap
+
+#### 10. Monotonic Stack
+
+#### 11. Trie
+
+#### 12. Binary Index Tree & Segment Tree
+
+### Dynamic Programming
+#### 1. Backpack
+
+#### 2. Single Sequence
+
+#### 3. Double Sequences
+
+#### 4. Sections
+
+#### 5. Matrix
+
+#### 6. Greedy
+
+#### 7. Others
 
 # II. Data Structure and Algorithms
 ## Important Concepts
