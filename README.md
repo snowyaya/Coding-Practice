@@ -15,13 +15,41 @@ This coding practice refers to [胖头龙 LeetCode Log](https://github.com/snowy
 
 
 
-# II. Templates
-## Recursion
-[Recurison in Programming (freeCodeCamp)](https://www.youtube.com/watch?v=IJDJ0kBx2LM)
-## Big O Notation
-[Big O Notation(freeCodeCamp)](https://www.youtube.com/watch?v=Mo4vesaut8g&t=784s)
+# II. Data Structure and Algorithms
+## Important Concepts
+- [Recurison in Programming (freeCodeCamp)](https://www.youtube.com/watch?v=IJDJ0kBx2LM)
+- [Big O Notation(freeCodeCamp)](https://www.youtube.com/watch?v=Mo4vesaut8g&t=784s)
 
-## Binary Search
+### Data Structure
+- Trie
+- Heap/Priority Queue
+- Union Find
+- LinkedList
+- Comparator
+- LRU
+- LFU
+- Tree
+
+## Algorithms
+- [Binary Search](#binary_search)
+- Pointer
+- Sliding Window
+- BFS
+- DFS
+- Backtracking
+- Merge Sort
+- Quick Sort
+- Bucket Sort
+- Monotonic Stack
+- Monotonic Queue
+- 扫描线
+- Divide and Conquer
+- Bit Manipulation
+- Prefix Sum
+- Dynamic Programming
+
+
+## Binary Search <span id = "binary_search"></span>
 #### 1) How does it work?
 n its simplest form, Binary Search operates on a contiguous sequence with a specified left and right index. This is called the Search Space. Binary Search maintains the left, right, and middle indicies of the search space and compares the search target or applies the search condition to the middle value of the collection; if the condition is unsatisfied or values unequal, the half in which the target cannot lie is eliminated and the search continues on the remaining half until it is successful. If the search ends with an empty half, the condition cannot be fulfilled and target is not found.
 
