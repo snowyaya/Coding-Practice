@@ -18,6 +18,58 @@ Strategy
 - [x] 🟣 704. Binary Search
 - [x] 🔵 34. Find First and Last Position of Element in Sorted Array
 - [x] 🔵 702. Search in a Sorted Array of Unknown Size
+
+```
+def search(self, reader: 'ArrayReader', target: int) -> int:
+    if (reader.get(0) is None) or (target < reader.get(0)): return -1
+    left = 0
+    right = 1
+    while target > reader.get(right):
+        right *= 2
+
+    while left <= right:
+        mid = (left + right) // 2
+
+        if target < reader.get(mid):
+            right = mid - 1
+        elif target > reader.get(mid):
+            left = mid + 1
+        else:
+            return mid
+    return -1
+```
+
+```
+def helper(reader, target, index):
+    if not reader.get(index): return -1;
+    
+    if target < reader.get(index): 
+        return find(reader, target, 0, index)
+    elif target > reader.get(index):
+        return helper(reader, target, (index + 1) * 2)
+    else:
+        return index
+    
+def find(reader, target, left, right):
+    if (left > right): return -1
+    while left <= right:
+        mid = left + (right - left) // 2
+        if target < reader.get(mid):
+            right = mid - 1
+        elif target > reader.get(mid):
+            left = mid + 1
+        else:
+            return mid
+    return -1
+    
+
+class Solution:
+    def search(self, reader: 'ArrayReader', target: int) -> int:
+        if reader.get(0) is None: return -1
+        if target < reader.get(0): return -1
+        return helper(reader, target, 0)  
+```
+
 - [ ] 🟢 153. Find Minimum in Rotated Sorted Array
 - [ ] 🟢 154. Find Minimum in Rotated Sorted Array II
 - [ ] 🟢 278. First Bad Version
