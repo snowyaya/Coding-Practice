@@ -17,6 +17,49 @@ Strategy
 #### 1. 朴素二分法
 - [x] 🟣 704. Binary Search
 - [x] 🔵 34. Find First and Last Position of Element in Sorted Array
+```python
+def find_left(nums, target):
+    ans = -1
+    left = 0
+    right = len(nums) - 1
+    
+    while left <= right:
+        mid = left + (right - left) // 2
+        if target < nums[mid]:
+            right = mid - 1
+        elif target > nums[mid]:
+            left = mid + 1
+        else:
+            ans = mid
+            right = mid - 1
+    return ans
+            
+    
+def find_right(nums, target):
+    ans = -1
+    left = 0
+    right = len(nums) - 1
+    
+    while left <= right:
+        mid = left + (right - left) // 2
+        if target < nums[mid]:
+            right = mid - 1
+        elif target > nums[mid]:
+            left = mid + 1
+        else:
+            ans = mid
+            left = mid + 1
+    return ans
+
+
+class Solution:
+    def searchRange(self, nums: List[int], target: int) -> List[int]:
+        if (nums is None) or len(nums) == 0: return [-1, -1]
+        
+        left_bound = find_left(nums, target)
+        right_bound = find_right(nums, target)
+        return [left_bound, right_bound]
+```
 - [x] 🔵 702. Search in a Sorted Array of Unknown Size
 
 ```python
