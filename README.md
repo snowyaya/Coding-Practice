@@ -1,6 +1,6 @@
 # Coding Practice
 
-This coding practice refers to [胖胖龙的刷题笔记]()
+This coding practice refers to [胖胖龙的刷题笔记](胖胖龙刷题方法.pdf)
 
 ## I. Progress
 > Focus on growth; Aim Small; Be consistant.
