@@ -19,7 +19,7 @@ Strategy
 - [x] 🔵 34. Find First and Last Position of Element in Sorted Array
 - [x] 🔵 702. Search in a Sorted Array of Unknown Size
 
-```
+```python
 def search(self, reader: 'ArrayReader', target: int) -> int:
     if (reader.get(0) is None) or (target < reader.get(0)): return -1
     left = 0
@@ -39,7 +39,7 @@ def search(self, reader: 'ArrayReader', target: int) -> int:
     return -1
 ```
 
-```
+```python
 def helper(reader, target, index):
     if not reader.get(index): return -1;
     
